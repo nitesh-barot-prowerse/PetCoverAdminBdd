@@ -1,0 +1,9 @@
+steps\DashBoardPageSteps.class
+hook\hooks.class
+steps\LogOutPageSteps.class
+steps\LogInPageSteps.class
+LogOutFeature.class
+HomePage.class
+DashBoardItems.class
+LogIn.class
+steps\HomePageSteps.class
