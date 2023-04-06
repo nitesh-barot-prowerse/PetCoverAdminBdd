@@ -11,3 +11,7 @@ Feature: Verify Data Of Manage Quote Page
 
   Scenario:To Check Quote date and Expire date at quote table displays in dd-mm-yyyy format
     Then User will able to see all data under quote date and expire date column displays with dd-mm-yyyy format
+
+    Scenario: One can redirect to add quote page by clicking add quote button on top right corner of manage quote
+      When User clicks add quote button on manage quote page
+      Then User will able to see add quote page with data

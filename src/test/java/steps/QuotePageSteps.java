@@ -53,7 +53,18 @@ public class QuotePageSteps {
                 Assert.fail();
             }
         }
+    }
 
+    @When("User clicks add quote button on manage quote page")
+    public void user_clicks_add_quote_button_on_manage_quote_page() {
+        quotePage.clickOnAddQuoteButton();
+
+    }
+
+    @Then("User will able to see add quote page with data")
+    public void user_will_able_to_see_add_quote_page_with_data() {
+        String addQuoteMessage=quotePage.verifyAddQuotePage();
+        Assert.assertEquals(addQuoteMessage,"Add Quote");
 
     }
 

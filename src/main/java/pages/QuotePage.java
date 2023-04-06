@@ -19,6 +19,10 @@ public class QuotePage {
     private By quoteIcon = By.cssSelector("ul[id='side-menu']>li:nth-child(4)");
     private By displayedMessage = By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
 
+    private By addQuoteButton= By.xpath("//div[@class=' tooltip-demo pull-right']/a[2]");
+
+    private By messageOnAddQuotePage=By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
+
     public String verifyManageQuotePage() {
         driver.findElement(quoteIcon).click();
         return driver.findElement(displayedMessage).getText();
@@ -57,4 +61,15 @@ public class QuotePage {
         return date;
 
     }
+
+    public void clickOnAddQuoteButton(){
+        driver.findElement(addQuoteButton).click();
+    }
+
+    public String verifyAddQuotePage(){
+       return driver.findElement(messageOnAddQuotePage).getText();
+    }
+
+
+
 }
