@@ -1,7 +1,9 @@
 pages\LogInPage.class
 pages\DashBoardPage.class
+pages\QuotePage.class
 pages\HomePage.class
 pages\LogOutPage.class
 utils\ConfigReader.class
+pages\ClientPage.class
 utils\ScreenRecorderUtil.class
 factory\DriverFactory.class
