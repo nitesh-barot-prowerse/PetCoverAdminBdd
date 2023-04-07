@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pages.ManageClaimPage;
+import utils.ScreenRecorderUtil;
 
 public class ManageClaimsSteps {
     ManageClaimPage claimPage = new ManageClaimPage(DriverFactory.getDriver());
@@ -62,6 +63,30 @@ public class ManageClaimsSteps {
                 break;
             }
         }
+
+    }
+
+    @When("User clicks on claim number on manage claim page")
+    public void user_clicks_on_claim_number_on_manage_claim_page() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        claimPage.redirectToClaimInformationPage();
+
+    }
+
+    @Then("User will redirects to respected claim information page")
+    public void user_will_redirects_to_respected_claim_information_page() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        String message = claimPage.verifyClaimInfoPageText();
+        Assert.assertEquals(message, "Claim Information");
+
 
     }
 }

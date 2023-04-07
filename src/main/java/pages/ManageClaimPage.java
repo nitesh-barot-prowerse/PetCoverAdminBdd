@@ -22,6 +22,8 @@ public class ManageClaimPage {
 
     private By manageClaimText = By.xpath("//ul[@id='side-menu']/li[6]/ul/li[1]");
 
+    private By displayedMessage =By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
     public void clickManageClaimIcon() {
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(manageClaimIcon)).perform();
@@ -75,6 +77,40 @@ public class ManageClaimPage {
             yPremium = yPremium + " " + amountP.getText().toString();
         }
         return yPremium;
+
+    }
+
+    public void redirectToClaimInformationPage() {
+
+        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[5]/a")));
+        int cSize = totalColumn.size();
+
+        for (WebElement cEle : totalColumn) {
+            System.out.println(cEle.getText());
+            cEle.click();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+            driver.switchTo().window(tabs2.get(1));
+            //driver.close();
+            //driver.switchTo().window(tabs2.get(0));
+            break;
+        }
+    }
+
+    public String verifyClaimInfoPageText() {
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        //driver.close();
+        //driver.switchTo().window(tabs2.get(0));
+        return driver.findElement(displayedMessage).getText();
 
     }
 

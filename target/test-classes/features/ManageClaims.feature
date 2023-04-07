@@ -10,3 +10,7 @@ Feature: Verify Available Data And Functionality On ManageClaims Page
   Scenario: All data concern date displays with dd-mm-yyyy format and data of amount prefixed by £ sign on manage claim page
     Then All data under treatment and cliam first advised date column displays in dd-mm-yyyy format
     Then  All data under Amount paybale column prefixed by £ sign
+
+    Scenario: User will redirect to respected claim information page by clicking on claim number link on manage claim page
+      When User clicks on claim number on manage claim page
+      Then User will redirects to respected claim information page
