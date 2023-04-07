@@ -4,10 +4,10 @@ steps\LogOutPageSteps.class
 steps\LogInPageSteps.class
 LogOutFeature.class
 QuotePage.class
+steps\QuotePageSteps.class
+DashBoardItems.class
 ClientPage.class
 steps\ClientPageSteps.class
-steps\QuotePageSteps.class
 HomePage.class
-DashBoardItems.class
 LogIn.class
 steps\HomePageSteps.class

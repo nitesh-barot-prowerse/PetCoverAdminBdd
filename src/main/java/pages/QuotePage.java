@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,9 +20,11 @@ public class QuotePage {
     private By quoteIcon = By.cssSelector("ul[id='side-menu']>li:nth-child(4)");
     private By displayedMessage = By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
 
-    private By addQuoteButton= By.xpath("//div[@class=' tooltip-demo pull-right']/a[2]");
+    private By addQuoteButton = By.xpath("//div[@class=' tooltip-demo pull-right']/a[2]");
 
-    private By messageOnAddQuotePage=By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
+    private By messageOnAddQuotePage = By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
+
+    private By monthlyPremiumColumn= By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]");
 
     public String verifyManageQuotePage() {
         driver.findElement(quoteIcon).click();
@@ -43,33 +46,65 @@ public class QuotePage {
         List<WebElement> quoteDateColumn = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[3]")));
         String date = "";
         for (WebElement quoteDate : quoteDateColumn) {
-            date = date +" "+ quoteDate.getText().toString();
+            date = date + " " + quoteDate.getText().toString();
 
         }
         return date;
 
     }
 
-    public String verifyExpireDateColumnFormat(){
+    public String verifyExpireDateColumnFormat() {
         WebDriverWait eWait = new WebDriverWait(driver, 10);
         List<WebElement> expireDateColumn = eWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[4]")));
         String date = "";
         for (WebElement expireDate : expireDateColumn) {
-            date = date +" "+ expireDate.getText().toString();
+            date = date + " " + expireDate.getText().toString();
 
         }
         return date;
 
     }
 
-    public void clickOnAddQuoteButton(){
+    public void clickOnAddQuoteButton() {
         driver.findElement(addQuoteButton).click();
     }
 
-    public String verifyAddQuotePage(){
-       return driver.findElement(messageOnAddQuotePage).getText();
+    public String verifyAddQuotePage() {
+        return driver.findElement(messageOnAddQuotePage).getText();
     }
 
+    public String verifyTotalPremiumColumn() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("arguments[0].scrollIntoView();", driver.findElement(monthlyPremiumColumn));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        List<WebElement> yearlyPremiumColum = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[15]")));
+        String yPremium=" ";
+        for (WebElement amountP : yearlyPremiumColum) {
+            yPremium= yPremium +" "+ amountP.getText().toString();
+        }
+      return yPremium;
+    }
+
+    public String verifyMonthlyPremiumColumn() {
+        WebDriverWait mWait = new WebDriverWait(driver, 10);
+        List<WebElement> monthlyPremiumColumn = mWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]")));
+        String yPremium=" ";
+        for (WebElement amountP : monthlyPremiumColumn) {
+            yPremium= yPremium +" "+ amountP.getText().toString();
+        }
+        return yPremium;
+
+    }
 
 
 }

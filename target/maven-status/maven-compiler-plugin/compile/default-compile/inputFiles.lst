@@ -2,6 +2,8 @@ C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\factory\DriverFactory
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\LogInPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\DashBoardPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\LogOutPage.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\PolicyPage.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\ManageClaimPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\HomePage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\ClientPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\utils\ConfigReader.java

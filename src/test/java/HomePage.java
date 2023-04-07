@@ -7,7 +7,9 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features/HomePage.feature"
                 , "src/test/resources/features/Login.feature"
                 , "src/test/resources/features/ClientPage.feature"
-                , "src/test/resources/features/QuotePage.feature"},
+                , "src/test/resources/features/QuotePage.feature"
+                , "src/test/resources/features/Policy.feature"
+                , "src/test/resources/features/ManageClaims.feature"},
         glue = {"steps", "hook"},
         monochrome = true,
         plugin = {"pretty",
