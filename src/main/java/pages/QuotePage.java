@@ -26,6 +26,8 @@ public class QuotePage {
 
     private By monthlyPremiumColumn= By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[16]");
 
+    private By microchipButton=By.xpath("//div[@class='form-group pull-right']/div/a[3]");
+
     public String verifyManageQuotePage() {
         driver.findElement(quoteIcon).click();
         return driver.findElement(displayedMessage).getText();
@@ -104,6 +106,21 @@ public class QuotePage {
         }
         return yPremium;
 
+    }
+
+    public String clickOnMicrochipButton(){
+        driver.findElement(microchipButton).click();
+        return driver.findElement(displayedMessage).getText();
+    }
+
+    public String verifyDataOnMicrochipPage(){
+        WebDriverWait rWait = new WebDriverWait(driver, 10);
+        List<WebElement> totalRow = rWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='MicrochipFileUploadAuditGrid']/table/tbody/tr")));
+        String data=" ";
+        for (WebElement rEle : totalRow) {
+            data=data+ " "+rEle.getText();
+        }
+        return data;
     }
 
 

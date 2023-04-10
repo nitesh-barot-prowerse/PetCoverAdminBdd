@@ -18,3 +18,8 @@ Feature: Verify Data And Functionality Of Manage Quote Page
 
   Scenario:Verify data under total and monthly premium column preceding by £ sign
     Then User will able to see  all data under total and monthly premium colum prefixed by £ sign
+
+  Scenario:To check whether user will able able to redirect and see data on microchip file upload  page after clicking on upload microchip button on manage quote page
+    When User clicks on upload microchip file button
+    Then User will be able to see microchip file upload page with data
+

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: HomePage
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 157.921 s - in HomePage
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 270.149 s - in HomePage

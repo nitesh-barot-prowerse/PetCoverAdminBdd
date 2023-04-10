@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
                 , "src/test/resources/features/ClientPage.feature"
                 , "src/test/resources/features/QuotePage.feature"
                 , "src/test/resources/features/Policy.feature"
-                , "src/test/resources/features/ManageClaims.feature"},
+                , "src/test/resources/features/ManageClaims.feature"
+                , "src/test/resources/features/ApproveClaim.feature"
+                , "src/test/resources/features/TaskPage.feature"},
         glue = {"steps", "hook"},
         monochrome = true,
         plugin = {"pretty",

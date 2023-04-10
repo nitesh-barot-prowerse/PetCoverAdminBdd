@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -22,7 +23,29 @@ public class ManageClaimPage {
 
     private By manageClaimText = By.xpath("//ul[@id='side-menu']/li[6]/ul/li[1]");
 
-    private By displayedMessage =By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+    private By displayedMessage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+
+    private By addClaimIcon = By.xpath("//div[@class=' tooltip-demo pull-right']/a[2]");
+
+    private By treatmentDropdown = By.xpath("//div[@class='well1']/div/div/div/div/span/span/span[@class='k-input']");
+
+    private By riskCountryDropDown = By.xpath("//div[@class='ibox-content']/div[6]/div[2]/div[1]/div/div/div[3]/div/div/div/span");
+
+    private By lostCountryDropDown = By.xpath("//div[@class='ibox-content']/div[6]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/span");
+
+    private By insuredCountryDropDown = By.xpath("//div[@class='ibox-content']/div[6]/div[3]/div/div/div[6]/div/div/div/span");
+
+    private By coverDropDown = By.xpath("//div[@class='ibox-content']/div[6]/div[3]/div/div/div[7]/div/div/div/span");
+
+    private By statusDropDown = By.xpath("//div[@class='ibox-content']/div[6]/div[3]/div[3]/div[3]/div/div[5]/div/div/div/span");
+
+    private By notifiedMethodDDown = By.xpath("//div[@class='ibox-content']/div[6]/div[4]/div/div/div[3]/div/div//div[5]/div/div/div/span");
+
+    private By paymentToDDown = By.xpath("//div[@class='ibox-content']/div[6]/div[4]/div/div/div[3]/div/div//div[8]/div/div/div/span");
+
+    private By conditionTypeDDown = By.xpath("//div[@class='ibox-content']/div[6]/div[4]/div/div/div[3]/div/div/div[14]/div/div/div/span");
+
 
     public void clickManageClaimIcon() {
         Actions actions = new Actions(driver);
@@ -114,7 +137,74 @@ public class ManageClaimPage {
 
     }
 
+    public void clickAddClaimIcon() {
+        driver.findElement(addClaimIcon).click();
     }
+
+    public String verifyAddClaimPage() {
+        return driver.findElement(displayedMessage).getText();
+    }
+
+    public void verifyDropDown() {
+        driver.findElement(treatmentDropdown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(riskCountryDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(lostCountryDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(insuredCountryDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,350)", "");
+        driver.findElement(coverDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(statusDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(notifiedMethodDDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(paymentToDDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(conditionTypeDDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+}
 
 
 

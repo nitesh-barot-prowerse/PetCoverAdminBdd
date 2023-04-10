@@ -92,5 +92,17 @@ public class QuotePageSteps {
 
     }
 
+    @When("User clicks on upload microchip file button")
+    public void user_clicks_on_upload_microchip_file_button() {
+        String Message=quotePage.clickOnMicrochipButton();
+        Assert.assertEquals(Message,"Microchip File Upload");
+    }
+
+    @Then("User will be able to see microchip file upload page with data")
+    public void user_will_be_able_to_see_microchip_file_upload_page_with_data() {
+     String dataOfMicroPage=quotePage.verifyDataOnMicrochipPage();
+     System.out.println(dataOfMicroPage);
+    }
+
 
 }

@@ -89,4 +89,23 @@ public class ManageClaimsSteps {
 
 
     }
+
+    @When("User clicks on add claim button")
+    public void user_clicks_on_add_claim_button() {
+     claimPage.clickAddClaimIcon();
+    }
+
+    @Then("User will redirect to add claim page")
+    public void user_will_redirect_to_add_claim_page() {
+     String Message=claimPage.verifyAddClaimPage();
+     Assert.assertEquals(Message,"Add Claim");
+    }
+
+    @Then("Page has all dropdown with valid list items'")
+    public void page_has_all_dropdown_with_valid_list_items() {
+        claimPage.verifyDropDown();
+
+    }
+
+
 }

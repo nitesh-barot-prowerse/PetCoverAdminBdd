@@ -7,6 +7,7 @@ C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\hook\hooks.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\HomePageSteps.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\ManageClaimsSteps.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\LogInPageSteps.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\TaskPageSteps.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\QuotePageSteps.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\LogIn.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\PolicyPageSteps.java
@@ -14,3 +15,4 @@ C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\LogOutPageSteps
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\ClientPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\DashBoardItems.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\ClientPageSteps.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\test\java\steps\ApproveClaimsPageSteps.java
