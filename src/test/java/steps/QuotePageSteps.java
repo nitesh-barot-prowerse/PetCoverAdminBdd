@@ -104,5 +104,17 @@ public class QuotePageSteps {
      System.out.println(dataOfMicroPage);
     }
 
+    @When("User clicks on add quote button")
+    public void user_clicks_on_add_quote_button() {
+     quotePage.clickOnAddQuoteButton();
+    }
+
+    @Then("On add quote page product dropdown will appear with desired list")
+    public void on_add_quote_page_product_dropdown_will_appear_with_desired_list() {
+        String verifyS=quotePage.verifyProductList();
+        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover Horse BB Commercial");
+
+    }
+
 
 }

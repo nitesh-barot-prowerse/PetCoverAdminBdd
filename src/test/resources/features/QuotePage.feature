@@ -23,3 +23,13 @@ Feature: Verify Data And Functionality Of Manage Quote Page
     When User clicks on upload microchip file button
     Then User will be able to see microchip file upload page with data
 
+  Scenario:On the Add Quote page, verify that the Product dropdown lists Dog, Cat, Exotic, and Introductory Cover
+    When User clicks on add quote button
+    Then On add quote page product dropdown will appear with desired list
+
+    Scenario: On the Add Quote page, select each product and verify that all the dropdowns have valid sample data
+      When User clicks on add quote button
+      And User selects desired items from product dropdown
+
+
+

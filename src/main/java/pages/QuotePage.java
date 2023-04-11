@@ -28,6 +28,9 @@ public class QuotePage {
 
     private By microchipButton=By.xpath("//div[@class='form-group pull-right']/div/a[3]");
 
+    private By productListDropDown= By.xpath("//div[@class='ibox-content']/div/div/div[4]/div/div/span");
+
+
     public String verifyManageQuotePage() {
         driver.findElement(quoteIcon).click();
         return driver.findElement(displayedMessage).getText();
@@ -122,6 +125,33 @@ public class QuotePage {
         }
         return data;
     }
+
+    public String verifyProductList(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(productListDropDown).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> pList = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("ul[id='PrimaryProductId_listbox']>li")));
+        System.out.println(pList.size());
+
+        String verfiy=" ";
+        for (WebElement product : pList) {
+
+            verfiy=verfiy+product.getText()+" ";
+
+        }
+        return verfiy;
+    }
+
+
 
 
 }

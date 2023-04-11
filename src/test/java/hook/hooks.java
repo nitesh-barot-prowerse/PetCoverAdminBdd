@@ -4,14 +4,15 @@ import factory.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import pages.Constant;
 import utils.ConfigReader;
+import utils.FrameworkConfig;
 
 import java.util.Properties;
-
-
 
 
 public class hooks {
@@ -20,11 +21,14 @@ public class hooks {
     private WebDriver driver;
     private ConfigReader configReader;
     Properties prop;
+    public   Constant constant;
+
 
     @Before(order = 0)
     public void getProperty() {
         configReader = new ConfigReader();
         prop = configReader.init_prop();
+
     }
 
     @Before(order = 1)
@@ -32,7 +36,16 @@ public class hooks {
         String browserName = prop.getProperty("browser");
         driverFactory = new DriverFactory();
         driver = driverFactory.init_browser(browserName);
-        DriverFactory.getDriver().get("http://52.32.106.250:7779/");
+        /*String urlName = prop.getProperty("url");
+        if (urlName.equals("http://52.32.106.250:7779/"))
+            DriverFactory.getDriver().get(urlName);
+        else if (urlName.equals("http://52.32.106.250:8889/")) {
+            DriverFactory.getDriver().get(urlName);
+        } else {
+            System.out.println("Please pass the correct url value: " + urlName);
+        }*/
+       // String constant.url
+        DriverFactory.getDriver().get(constant.url);
 
     }
 
