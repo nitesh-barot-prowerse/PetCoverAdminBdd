@@ -5,7 +5,9 @@ public class Constant {
 
     public static String url;
     static {
-        if(ENVIRONMENT.equals("QA")){
+        if(ENVIRONMENT.equals("UTS-UK2QA")){
+            url="http://52.32.106.250:7779/";
+        } else if (ENVIRONMENT.equals("UTS-UK2Stage")) {
             url="http://52.32.106.250:8889/";
         }
     }
