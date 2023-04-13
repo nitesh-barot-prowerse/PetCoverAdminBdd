@@ -1,5 +1,8 @@
+package runner;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -10,5 +13,5 @@ import org.junit.runner.RunWith;
         plugin = { "pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
 )
-public class LogIn {
+public class LogIn  {
 }

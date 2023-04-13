@@ -65,4 +65,10 @@ public class hooks {
 
 
     }
+    @After(order = 2)
+    public void displayUrl(Scenario scenario) {
+        String name=scenario.getName();
+        scenario.log(constant.url);
+
+    }
 }
