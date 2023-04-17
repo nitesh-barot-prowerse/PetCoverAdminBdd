@@ -119,7 +119,7 @@
                         <environment>${environment}</environment>
                     </systemPropertyVariables>
                     <includes>
-                        <include>**/LogIn.java</include>
+                        <include>**/HomePage.java</include>
                     </includes>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
