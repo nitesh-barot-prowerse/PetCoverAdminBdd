@@ -4,18 +4,21 @@ import factory.DriverFactory;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
+import pages.Constant;
 import pages.HomePage;
 import pages.LogInPage;
 
 public class HomePageSteps {
 
     HomePage homePage = new HomePage(DriverFactory.getDriver());
+    Constant constant;
 
-    @When("User verify url {string}")
-    public void user_verify_url(String string) {
+    @When("User verify admin login page through url")
+    public void user_verify_admin_login_page_through_url() {
         String url = homePage.verifyUrl();
         System.out.println("Current Page Url" + url);
-        Assert.assertEquals(url, "http://52.32.106.250:7779/");
+        Assert.assertEquals(url, constant.url);
+
     }
 
     @Then("User will able to see text {string} behind copyright message")

@@ -13,7 +13,9 @@ import org.junit.runner.RunWith;
                 , "src/test/resources/features/Policy.feature"
                 , "src/test/resources/features/ManageClaims.feature"
                 , "src/test/resources/features/ApproveClaim.feature"
-                , "src/test/resources/features/TaskPage.feature"},
+                , "src/test/resources/features/TaskPage.feature"
+                , "src/test/resources/features/AccountPage.feature"
+                , "src/test/resources/features/AdminPage.feature"},
         glue = {"steps", "hook"},
         monochrome = true,
         plugin = {"pretty",
