@@ -14,3 +14,8 @@ Feature: Check Admin Page Data And Functionality
     Then User will redirects to edit letter template page
     And User will able to edit available fields on page
 
+  Scenario:  Verify that the Administration page displays with a set of icons.Corresponding page opens on clicking icon.
+    Then Account page displays with icons and corresponding page displays by clicking on icon.
+
+
+

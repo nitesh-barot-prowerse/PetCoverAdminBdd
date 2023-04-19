@@ -103,4 +103,17 @@ public class AdminPage {
             throw new RuntimeException(e);
         }
     }
+
+    public void traversingThroughPages() {
+        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='ibox-content']/div/div/a")));
+        for (WebElement cLE : totalColumn) {
+            System.out.println(cLE.getText());
+            if (cLE.getText().equals("Insurer")) {
+                cLE.click();
+                System.out.println(driver.getCurrentUrl());
+                break;
+            }
+        }
+    }
 }

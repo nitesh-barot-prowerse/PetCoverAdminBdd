@@ -44,5 +44,14 @@ public class AdminPageSteps {
 
     }
 
+    @Then("Account page displays with icons and corresponding page displays by clicking on icon.")
+    public void account_page_displays_with_icons_and_corresponding_page_displays_by_clicking_on_icon() {
+        adminPage.traversingThroughPages();
+
+    }
+
+
+
+
 
 }

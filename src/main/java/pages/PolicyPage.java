@@ -135,7 +135,7 @@ public class PolicyPage {
     }
     public String verifyDownLoadFile()
     {
-        File myfile = new File("C:/Users/prowe/Downloads/BPIS Document - Welcome Letter.pdf");
+        File myfile = new File("C:/Users/prowe/Downloads/All - UK - Petcover - Terms of Business Agreement 20230101.pdf");
         //FileUtils.touch(myfile);
         String re="";
 

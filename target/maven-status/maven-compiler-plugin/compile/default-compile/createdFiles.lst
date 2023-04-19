@@ -11,5 +11,6 @@ pages\TaskPage.class
 pages\LogInPage.class
 pages\LogOutPage.class
 pages\AccountPage.class
+pages\AdminPage.class
 utils\ScreenRecorderUtil.class
 factory\DriverFactory.class
