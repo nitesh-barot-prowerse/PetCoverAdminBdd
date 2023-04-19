@@ -16,7 +16,10 @@ import org.junit.runner.RunWith;
                 , "src/test/resources/features/TaskPage.feature"
                 , "src/test/resources/features/AccountPage.feature"
                 , "src/test/resources/features/AdminPage.feature"
-                , "src/test/resources/features/LogOut.feature"},
+                , "src/test/resources/features/LogOut.feature"
+                , "src/test/resources/features/Report.feature"
+                , "src/test/resources/features/Setting.feature"
+                , "src/test/resources/features/DashBoardItems.feature"},
         glue = {"steps", "hook"},
         monochrome = true,
         plugin = {"pretty",
