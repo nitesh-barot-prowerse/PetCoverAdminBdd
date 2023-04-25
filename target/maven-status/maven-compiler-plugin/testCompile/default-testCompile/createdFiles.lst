@@ -8,6 +8,7 @@ runner\PolicyPage.class
 steps\PolicyPageSteps.class
 runner\LogOut.class
 runner\ClientPage.class
+steps\SettingPageSteps.class
 runner\AccountPage.class
 steps\QuotePageSteps.class
 runner\TaskPage.class
@@ -18,7 +19,10 @@ steps\AccountPageSteps.class
 runner\AdminPage.class
 steps\TaskPageSteps.class
 runner\QuotePage.class
+runner\SettingPage.class
 steps\ClientPageSteps.class
 runner\DashBoardItems.class
+steps\ReportPageSteps.class
 runner\ManageClaimsPage.class
 steps\HomePageSteps.class
+runner\ReportPage.class

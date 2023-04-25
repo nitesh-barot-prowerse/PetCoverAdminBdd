@@ -15,7 +15,8 @@ Feature: Verify Available Data And Functionality On ManageClaims Page
     When User clicks on claim number on manage claim page
     Then User will redirects to respected claim information page
 
-    Scenario: Add claim page displays all dropdowns with valid items and date appears with calender icon
-      When User clicks on add claim button
-      Then User will redirect to add claim page
-      And Page has all dropdown with valid list items'
+  Scenario: Add claim page displays all dropdowns with valid items and date appears with calender icon
+    When User clicks on add claim button
+    Then User will redirect to add claim page
+    And Page has all dropdown with valid list items'
+

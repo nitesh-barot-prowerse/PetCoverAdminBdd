@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,9 +26,13 @@ public class PolicyPage {
 
     private By displayedMessageOnPolicyInformation = By.xpath("//div[@id='page-wrapper']/div[3]/div/h2");
 
-    private By letterIcon=By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[11]");
+    private By letterIcon = By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[11]");
 
-    private By downloadIcon= By.xpath("//div[@id='gridPolicyLetterList']/table/tbody/tr/td[14]/div/a[1]");
+    private By downloadIcon = By.xpath("//div[@id='gridPolicyLetterList']/table/tbody/tr/td[14]/div/a[1]");
+
+    private By statusDropDown = By.xpath("//div[@class='ms-parent']");
+
+    private By policyDropDownOption = By.xpath("//div[@class='ms-drop']/ul/li[2]");
 
     public void clickPolicyIcon() {
         driver.findElement(policyIcon).click();
@@ -91,6 +96,7 @@ public class PolicyPage {
         return driver.findElement(displayedMessageOnPolicyInformation).getText();
 
     }
+
     public void LetterIcon() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,350)", "");
@@ -133,20 +139,42 @@ public class PolicyPage {
 
         //driver.switchTo().window(tabs2.get(0));
     }
-    public String verifyDownLoadFile()
-    {
+
+    public String verifyDownLoadFile() {
         File myfile = new File("C:/Users/prowe/Downloads/All - UK - Petcover - Terms of Business Agreement 20230101.pdf");
         //FileUtils.touch(myfile);
-        String re="";
+        String re = "";
 
         if (myfile.exists()) {
-            re="file exist";
+            re = "file exist";
 
         } else {
 
             System.out.println("The file does not exist");
         }
         return re;
+    }
+
+    public void selectOptionFromStatusDropDown() {
+        WebElement element = driver.findElement(statusDropDown);
+        Actions actions = new Actions(driver); actions.moveToElement(element).click().build().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(policyDropDownOption).click();
+
+    }
+
+    public String verifyPolicyStatusUponDropDown() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> policyStatus = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[11]")));
+        String Status = " ";
+        for (WebElement status : policyStatus) {
+            Status = status.getText();
+        }
+        return Status;
     }
 
 

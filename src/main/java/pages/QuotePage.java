@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class QuotePage {
@@ -29,6 +30,10 @@ public class QuotePage {
     private By microchipButton=By.xpath("//div[@class='form-group pull-right']/div/a[3]");
 
     private By productListDropDown= By.xpath("//div[@class='ibox-content']/div/div/div[4]/div/div/span");
+
+    private By quoteStatusDropDown=By.xpath("//div[@class='ibox-content-search m-b-sm']/div/div/div[5]/div/div/div/button");
+
+    private By statusOpen=By.xpath("//div[@class='ms-drop']/ul/li[1]");
 
 
     public String verifyManageQuotePage() {
@@ -149,6 +154,49 @@ public class QuotePage {
 
         }
         return verfiy;
+    }
+
+    public void fetchDataOfQuoteInformation(){
+        WebDriverWait cWait = new WebDriverWait(driver,10);
+        List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[2]/a")));
+
+        for (WebElement cEle : totalColumn) {
+            System.out.println(cEle.getText());
+
+            cEle.click();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+            driver.switchTo().window(tabs2.get(1));
+            System.out.println(driver.getCurrentUrl());
+            driver.close();
+            driver.switchTo().window(tabs2.get(0));
+
+        }
+
+    }
+
+    public void SelectItemFromDropDown(){
+        driver.findElement(quoteStatusDropDown).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(statusOpen).click();
+    }
+
+    public String fetchAndVerifyDataAgainstDropDown(){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> totalRow = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]")));
+        String array = " ";
+        for (WebElement rEle : totalRow) {
+            array = array + " " + rEle.getText();
+        }
+        return array;
     }
 
 

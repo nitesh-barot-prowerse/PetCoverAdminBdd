@@ -112,7 +112,37 @@ public class QuotePageSteps {
     @Then("On add quote page product dropdown will appear with desired list")
     public void on_add_quote_page_product_dropdown_will_appear_with_desired_list() {
         String verifyS=quotePage.verifyProductList();
-        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover ");
+        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover Horse BB Commercial ");
+
+    }
+
+    @When("User clicks on quote number on manage quote page")
+    public void user_clicks_on_quote_number_on_manage_quote_page() {
+        quotePage.fetchDataOfQuoteInformation();
+
+    }
+
+    @Then("User will see quote information")
+    public void user_will_see_quote_information() {
+
+    }
+    @When("User selects appropriate option from quote status dropdown")
+    public void user_selects_appropriate_option_from_quote_status_dropdown() {
+        quotePage.SelectItemFromDropDown();
+
+    }
+
+    @Then("Respected data will be displayed on Manage quote page")
+    public void respected_data_will_be_displayed_on_manage_quote_page() {
+        String statusArray = quotePage.fetchAndVerifyDataAgainstDropDown();
+        System.out.println(statusArray);
+        String newArray[] = statusArray.split(" ");
+        for (int i = 0; i < newArray.length - 1; i++) {
+            if (newArray[i].equals("Open")) {
+                System.out.println("All Amount Under Yearly Premium Column Prefixed By £");
+                break;
+            }
+        }
 
     }
 

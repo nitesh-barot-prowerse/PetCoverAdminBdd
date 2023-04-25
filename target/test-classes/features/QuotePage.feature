@@ -6,7 +6,6 @@ Feature: Verify Data And Functionality Of Manage Quote Page
     When User clicks on quote icon on left tool bar
 
   Scenario: User will redirect to manage quote page after clicking on quote icon on left tool bar
-    When User clicks on quote icon on left tool bar
     Then User will see quote details
 
   Scenario:To Check Quote date and Expire date at quote table displays in dd-mm-yyyy format
@@ -26,6 +25,14 @@ Feature: Verify Data And Functionality Of Manage Quote Page
   Scenario:On the Add Quote page, verify that the Product dropdown lists Dog, Cat, Exotic, and Introductory Cover
     When User clicks on add quote button
     Then On add quote page product dropdown will appear with desired list
+
+  Scenario: Respected quote information page will be displayed upon clicking quote number on manage quote page
+    When User clicks on quote number on manage quote page
+    Then User will see quote information
+
+  Scenario: Items on manage quote page displays upon item select from quote status dropdown
+    When User selects appropriate option from quote status dropdown
+    Then Respected data will be displayed on Manage quote page
 
 
 

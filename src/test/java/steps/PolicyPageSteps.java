@@ -85,13 +85,29 @@ public class PolicyPageSteps {
 
     @Then("User will able to see downloaded policy page")
     public void user_will_able_to_see_downloaded_policy_page() {
-        String downloadFile=policyPage.verifyDownLoadFile();
+        String downloadFile = policyPage.verifyDownLoadFile();
         if (downloadFile.equals("file exist")) {
             System.out.println("File Has Been Downloaded");
         } else {
             Assert.fail();
         }
 
+    }
+
+    @When("User selects any options from status dropdown")
+    public void user_selects_any_options_from_status_dropdown() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        policyPage.selectOptionFromStatusDropDown();
+    }
+
+    @Then("Appropriate data displays on manage policy page depend on drop down option")
+    public void appropriate_data_displays_on_manage_policy_page_depend_on_drop_down_option() {
+        String policyStatus = policyPage.verifyPolicyStatusUponDropDown();
+        System.out.println(policyStatus);
     }
 
 }

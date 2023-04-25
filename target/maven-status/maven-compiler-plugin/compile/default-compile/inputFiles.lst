@@ -2,6 +2,7 @@ C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\ApproveClaimPag
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\factory\DriverFactory.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\DashBoardPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\LogOutPage.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\SettingPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\QuotePage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\utils\ScreenRecorderUtil.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\LogInPage.java
@@ -14,3 +15,4 @@ C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\HomePage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\AccountPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\ClientPage.java
 C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\utils\ConfigReader.java
+C:\Users\prowe\IdeaProjects\PetCoverAdminBdd\src\main\java\pages\ReportPage.java

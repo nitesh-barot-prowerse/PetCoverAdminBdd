@@ -27,6 +27,7 @@ public class LogInPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         return driver.getCurrentUrl();
 
     }

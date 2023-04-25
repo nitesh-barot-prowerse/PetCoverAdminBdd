@@ -4,6 +4,8 @@ import factory.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -29,7 +31,7 @@ public class hooks {
 
     }
 
-    @Before(order = 1)
+    @Before(order = 2)
     public void launchBrowser() {
         String browserName = prop.getProperty("browser");
         driverFactory = new DriverFactory();
@@ -69,4 +71,5 @@ public class hooks {
         scenario.log(constant.url);
 
     }
+
 }

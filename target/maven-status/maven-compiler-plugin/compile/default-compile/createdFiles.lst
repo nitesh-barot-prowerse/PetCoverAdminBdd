@@ -1,3 +1,4 @@
+pages\SettingPage.class
 pages\PolicyPage.class
 pages\DashBoardPage.class
 pages\ManageClaimPage.class
@@ -9,6 +10,7 @@ pages\ApproveClaimPage.class
 pages\ClientPage.class
 pages\TaskPage.class
 pages\LogInPage.class
+pages\ReportPage.class
 pages\LogOutPage.class
 pages\AccountPage.class
 pages\AdminPage.class
