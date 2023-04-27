@@ -20,3 +20,7 @@ Feature: Verify Available Data And Functionality On ManageClaims Page
     Then User will redirect to add claim page
     And Page has all dropdown with valid list items'
 
+  Scenario: Treatment status should reflect upon items selected from treatment status drop down on manage claim page
+    When User selects any options from treatment status dropdown on manage claim page
+    Then Appropriate treatment status will display on manage claim page under claim details
+

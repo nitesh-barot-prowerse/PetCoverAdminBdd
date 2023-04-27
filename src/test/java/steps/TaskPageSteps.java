@@ -36,13 +36,90 @@ public class TaskPageSteps {
 
     @Then("User redirects to page with {string} message")
     public void user_redirects_to_page_with_message(String string) {
-     String Message=taskPage.verifyAddTaskPage();
-     Assert.assertEquals(Message,string);
+        String Message = taskPage.verifyAddTaskPage();
+        Assert.assertEquals(Message, string);
     }
 
     @Then("Assigned to dropdown appears with initial {string} current user")
     public void assigned_to_dropdown_appears_with_initial_current_user(String string) {
-     String userName=taskPage.verifyDropDown();
-     Assert.assertEquals(userName,string);
+        String userName = taskPage.verifyDropDown();
+        Assert.assertEquals(userName, string);
+    }
+
+    @When("User Selects any option from status dropdown on manage task page")
+    public void user_selects_any_option_from_status_dropdown_on_manage_task_page() {
+        taskPage.selectOptionFromStatus();
+
+    }
+
+    @Then("Status tage of manage task data displays accordingly")
+    public void status_tage_of_manage_task_data_displays_accordingly() {
+        String status = taskPage.verifyStatusOfManageTaskData();
+        if (status.contains("Open")) {
+            System.out.println("All data under status column displays right");
+        }
+    }
+
+    @When("User Selects any option from priority dropdown on manage task page")
+    public void user_selects_any_option_from_priority_dropdown_on_manage_task_page() {
+        taskPage.selectOptionFromPriorityDropDown();
+
+    }
+
+    @Then("Data under priority column of task data displays accordingly")
+    public void data_under_priority_column_of_task_data_displays_accordingly() {
+        String status = taskPage.verifyPriorityDataOfTask();
+        System.out.println(status);
+        if (status.contains("Medium")) {
+            System.out.println("All data under Priority column displays right");
+        } else {
+            Assert.fail();
+        }
+
+    }
+
+    @When("User Selects any option from type dropdown on manage task page")
+    public void user_selects_any_option_from_type_dropdown_on_manage_task_page() {
+        taskPage.selectOptionFromTypeDropDown();
+    }
+
+    @Then("Data under type column of task data displays accordingly")
+    public void data_under_type_column_of_task_data_displays_accordingly() {
+        String type = taskPage.verifyTypeDataOfTask();
+
+        if (type.contains("Inbound")) {
+            System.out.println("All data under Type column displays right");
+        } else {
+            Assert.fail();
+        }
+    }
+
+    @When("User Selects any option from client dropdown on manage task page")
+    public void user_selects_any_option_from_client_dropdown_on_manage_task_page() {
+        taskPage.selectOptionFromClientDropDown();
+
+    }
+
+    @Then("Data under client column of task data displays accordingly")
+    public void data_under_client_column_of_task_data_displays_accordingly() {
+        String type = taskPage.verifyClientDataOfTask();
+
+        if (type.contains("ZULETA Luis")) {
+            System.out.println("All data under Client column displays right");
+        } else {
+            Assert.fail();
+        }
+
+    }
+
+    @When("User clicks on task tile on task manage page")
+    public void user_clicks_on_task_tile_on_task_manage_page() {
+        taskPage.clickAndFetchDataOfTask();
+
+    }
+
+    @Then("Task details window will open with all task details")
+    public void task_details_window_will_open_with_all_task_details() {
+
     }
 }

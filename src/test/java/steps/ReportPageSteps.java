@@ -34,5 +34,29 @@ public class ReportPageSteps {
         //reportPage.traversingThroughPages();
 
     }
+    @When("User clicks on quote report button on report button")
+    public void user_clicks_on_quote_report_button_on_report_button() {
+        reportPage.clickOnQuoteReportIcon();
+
+    }
+
+    @When("User selects any option from product,quote from and quote status drop down on quote report page")
+    public void user_selects_any_option_from_product_quote_from_and_quote_status_drop_down_on_quote_report_page() {
+        reportPage.selectOptionFromDropDown();
+
+    }
+
+    @When("User clicks on search button on quote report page")
+    public void user_clicks_on_search_button_on_quote_report_page() {
+        reportPage.clickSearchIcon();
+
+    }
+
+    @Then("Appropriate data displays on on quote report page upon selected options from drop down")
+    public void appropriate_data_displays_on_on_quote_report_page_upon_selected_options_from_drop_down() {
+        String data=reportPage.verifyQuoteReportData();
+        System.out.println(data);
+
+    }
 
 }

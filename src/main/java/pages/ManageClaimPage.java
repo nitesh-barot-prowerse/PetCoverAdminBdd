@@ -46,6 +46,14 @@ public class ManageClaimPage {
 
     private By conditionTypeDDown = By.xpath("//div[@class='ibox-content']/div[6]/div[4]/div/div/div[3]/div/div/div[14]/div/div/div/span");
 
+    private By treatmentStatusDropDown=By.xpath("//div[@class='controls']/div/button");
+
+    private By selectItemFromStatusDropDown=By.xpath("//div[@class='ms-parent']/div/ul/li[2]/label/input");
+
+    private By clickSearchButton=By.cssSelector("button[id='SearchGrid']");
+
+
+
 
     public void clickManageClaimIcon() {
         Actions actions = new Actions(driver);
@@ -202,6 +210,42 @@ public class ManageClaimPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void selectItemFromStatusDropDown(){
+        driver.findElement(treatmentStatusDropDown).click();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(selectItemFromStatusDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clickSearchButton).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String verifyTreatmentStatus(){
+        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr/td[20]/div")));
+
+        String Status = " ";
+        for (WebElement cEle : treatmentStatus) {
+           // System.out.println(cEle.getText());
+            Status = Status + " " + cEle.getText();
+
+        }
+        return Status;
+
     }
 
 }

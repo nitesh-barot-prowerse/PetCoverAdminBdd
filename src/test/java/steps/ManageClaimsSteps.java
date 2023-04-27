@@ -54,7 +54,7 @@ public class ManageClaimsSteps {
 
     @Then("All data under Amount paybale column prefixed by £ sign")
     public void all_data_under_amount_paybale_column_prefixed_by_£_sign() {
-        String amountPayable=claimPage.verifyAmountPayableColumn();
+        String amountPayable = claimPage.verifyAmountPayableColumn();
         //System.out.println(yearlyArray);
         String apArray[] = amountPayable.split(" ");
         for (int i = 0; i < apArray.length - 1; i++) {
@@ -92,19 +92,34 @@ public class ManageClaimsSteps {
 
     @When("User clicks on add claim button")
     public void user_clicks_on_add_claim_button() {
-     claimPage.clickAddClaimIcon();
+        claimPage.clickAddClaimIcon();
     }
 
     @Then("User will redirect to add claim page")
     public void user_will_redirect_to_add_claim_page() {
-     String Message=claimPage.verifyAddClaimPage();
-     Assert.assertEquals(Message,"Add Claim");
+        String Message = claimPage.verifyAddClaimPage();
+        Assert.assertEquals(Message, "Add Claim");
     }
 
     @Then("Page has all dropdown with valid list items'")
     public void page_has_all_dropdown_with_valid_list_items() {
         claimPage.verifyDropDown();
 
+    }
+
+    @When("User selects any options from treatment status dropdown on manage claim page")
+    public void user_selects_any_options_from_treatment_status_dropdown_on_manage_claim_page() {
+        claimPage.selectItemFromStatusDropDown();
+
+    }
+
+    @Then("Appropriate treatment status will display on manage claim page under claim details")
+    public void appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details() {
+        String treatmentStatus = claimPage.verifyTreatmentStatus();
+
+       if (treatmentStatus.contains("Pending")){
+           System.out.println("Treatment status appeared as per requirement");
+       }
     }
 
 
