@@ -51,7 +51,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Apr 25, 2023 04:18:52 pm</span>
+                    <span class="badge badge-primary">May 2, 2023 05:03:36 pm</span>
                 </a>
             </li>
         </ul>
@@ -127,8 +127,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify account page hyperlinks</p>
-							<p class="duration text-sm">0h 0m 4s+703ms</p>
-							<span class="datetime">16:18:57 pm</span>
+							<p class="duration text-sm">0h 0m 7s+930ms</p>
+							<span class="datetime">17:03:48 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -136,9 +136,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify account page hyperlinks</h5>
-									<span class='badge badge-success'>04.25.2023 16:18:57</span>
-									<span class='badge badge-danger'>04.25.2023 16:19:02</span>
-									<span class='badge badge-default'>0h 0m 4s+703ms</span>
+									<span class='badge badge-success'>05.02.2023 17:03:48</span>
+									<span class='badge badge-danger'>05.02.2023 17:03:56</span>
+									<span class='badge badge-default'>0h 0m 7s+930ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -150,7 +150,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">All hyperlinks with icons on account page should work</div>
+				<div class="node">Bank Information page displays with details after clicking on bank code link on manage bank details</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -172,18 +172,25 @@
 								<span>When User clicks on account icon on left tool bar</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.AccountPageSteps.user_clicks_on_icon()">
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AccountPageSteps.user_clicks_on_bank_icon()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When User clicks on icon</span>
+								<span>When User clicks on bank icon</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.AccountPageSteps.user_will_redirect_to_respected_page()">
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AccountPageSteps.user_clicks_on_bank_code_link_on_manage_bank_page()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Then User will redirect to respected page</span>
+								<span>And User clicks on bank code link on manage bank page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AccountPageSteps.bank_information_page_displays_with_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Bank information page displays with details</span>
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -199,7 +206,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="12"
+				<li class="test-item"  status="pass" test-id="13"
 					author=""
 					tag=""
 					device="">
@@ -209,8 +216,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Check Admin Page Data And Functionality</p>
-							<p class="duration text-sm">0h 0m 27s+974ms</p>
-							<span class="datetime">16:19:06 pm</span>
+							<p class="duration text-sm">0h 2m 56s+812ms</p>
+							<span class="datetime">17:04:02 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -218,9 +225,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Check Admin Page Data And Functionality</h5>
-									<span class='badge badge-success'>04.25.2023 16:19:06</span>
-									<span class='badge badge-danger'>04.25.2023 16:19:34</span>
-									<span class='badge badge-default'>0h 0m 27s+974ms</span>
+									<span class='badge badge-success'>05.02.2023 17:04:02</span>
+									<span class='badge badge-danger'>05.02.2023 17:06:59</span>
+									<span class='badge badge-default'>0h 2m 56s+812ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -383,10 +390,472 @@
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To verify whether View Product page displays with product details with status after by clicking on product code on manage product page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_product_icon_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on product icon administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_product_code_on_manage_product_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on product code on manage product page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.view_product_page_displays_with_all_product_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then View product page displays with all product details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To verify if insurer pop up windows displays by  clicking on insurer configuration pop up on setting icon on manage product page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_product_icon_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on product icon administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_insurer_configuration_icon()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on insurer configuration icon</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.insurer_configuration_displays_with_all_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Insurer configuration displays with all details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To verify if agent configuration pop up windows displays by  clicking on agent configuration on setting icon on manage product page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_product_icon_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on product icon administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_agent_configuration_icon()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on agent configuration icon</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.agent_configuration_displays_with_all_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Agent configuration displays with all details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data on manage department page upon entering respective department value in search box</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_department_icon_on_administrator_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on department icon on administrator page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_enters_department_value_in_to_search_input_on_manage_department_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User enters department value in to search input on manage department page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_search_button_on_manage_department_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on search button on manage department page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.respected_data_upon_department_value_will_display_on_manage_department_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Respected data upon department value will display on manage department page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Manage Bank Account page displays with all details by clicking on bank account icon on administration page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_bank_account_icon()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on bank account icon</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.manage_bank_account_page_displays_with_all_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Manage bank account page displays with all details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data of bank details upon bank account and insurer drop down items on manage bank account page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_bank_icon_on_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on bank icon on administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_selects_any_item_from_bank_account_drop_down()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects any item from bank account drop down</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_selects_any_item_from_insurer_drop_down()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects any item from insurer drop down</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_search_button_on_manage_bank_account_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on search button on manage bank account page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.user_will_find_respected_data_under_bank_detail_table()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then User will find respected data under bank detail table</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Add Bank account page displays with details after clicking on add bank account button on manage bank account page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_bank_icon_on_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on bank icon on administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_add_bank_account_icon_on_manage_bank_account_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on add bank account icon on manage bank account page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.add_bank_account_page_displays_with_all_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Add bank account page displays with all details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">On the manage bank account page , click the Edit icon against a insurer name. The Edit Bank Account page should open with the  data in editable format.</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on administration icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_bank_icon_on_administration_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on bank icon on administration page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.AdminPageSteps.user_clicks_on_edit_icon_against_insurer_name_on_manage_bank_account_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User clicks on edit icon against insurer name on manage bank account page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.edit_bank_account_page_displays_with_all_fields_in_editable_format()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Edit Bank account page displays with all fields in editable format</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="44"
+				<li class="test-item"  status="pass" test-id="135"
 					author=""
 					tag=""
 					device="">
@@ -396,8 +865,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Available Data And Functionality On Approve Page</p>
-							<p class="duration text-sm">0h 0m 7s+368ms</p>
-							<span class="datetime">16:19:39 pm</span>
+							<p class="duration text-sm">0h 0m 11s+815ms</p>
+							<span class="datetime">17:07:19 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -405,9 +874,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Available Data And Functionality On Approve Page</h5>
-									<span class='badge badge-success'>04.25.2023 16:19:39</span>
-									<span class='badge badge-danger'>04.25.2023 16:19:47</span>
-									<span class='badge badge-default'>0h 0m 7s+368ms</span>
+									<span class='badge badge-success'>05.02.2023 17:07:19</span>
+									<span class='badge badge-danger'>05.02.2023 17:07:31</span>
+									<span class='badge badge-default'>0h 0m 11s+815ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -468,7 +937,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="55"
+				<li class="test-item"  status="pass" test-id="146"
 					author=""
 					tag=""
 					device="">
@@ -478,8 +947,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Data Of Manage Client Page</p>
-							<p class="duration text-sm">0h 0m 35s+791ms</p>
-							<span class="datetime">16:19:51 pm</span>
+							<p class="duration text-sm">0h 1m 3s+947ms</p>
+							<span class="datetime">17:07:41 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -487,9 +956,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Data Of Manage Client Page</h5>
-									<span class='badge badge-success'>04.25.2023 16:19:51</span>
-									<span class='badge badge-danger'>04.25.2023 16:20:27</span>
-									<span class='badge badge-default'>0h 0m 35s+791ms</span>
+									<span class='badge badge-success'>05.02.2023 17:07:41</span>
+									<span class='badge badge-danger'>05.02.2023 17:08:45</span>
+									<span class='badge badge-default'>0h 1m 3s+947ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -718,7 +1187,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="99"
+				<li class="test-item"  status="fail" test-id="190"
 					author=""
 					tag=""
 					device="">
@@ -728,8 +1197,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify DashBoard Items</p>
-							<p class="duration text-sm">0h 0m 3s+181ms</p>
-							<span class="datetime">16:20:31 pm</span>
+							<p class="duration text-sm">0h 0m 5s+382ms</p>
+							<span class="datetime">17:08:50 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -737,9 +1206,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">Verify DashBoard Items</h5>
-									<span class='badge badge-success'>04.25.2023 16:20:31</span>
-									<span class='badge badge-danger'>04.25.2023 16:20:34</span>
-									<span class='badge badge-default'>0h 0m 3s+181ms</span>
+									<span class='badge badge-success'>05.02.2023 17:08:50</span>
+									<span class='badge badge-danger'>05.02.2023 17:08:55</span>
+									<span class='badge badge-default'>0h 0m 5s+382ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -835,7 +1304,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="112"
+				<li class="test-item"  status="pass" test-id="203"
 					author=""
 					tag=""
 					device="">
@@ -845,8 +1314,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Launched Page Verification by displayed text</p>
-							<p class="duration text-sm">0h 0m 1s+405ms</p>
-							<span class="datetime">16:20:41 pm</span>
+							<p class="duration text-sm">0h 0m 1s+422ms</p>
+							<span class="datetime">17:08:59 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -854,9 +1323,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Launched Page Verification by displayed text</h5>
-									<span class='badge badge-success'>04.25.2023 16:20:41</span>
-									<span class='badge badge-danger'>04.25.2023 16:20:42</span>
-									<span class='badge badge-default'>0h 0m 1s+405ms</span>
+									<span class='badge badge-success'>05.02.2023 17:08:59</span>
+									<span class='badge badge-danger'>05.02.2023 17:09:01</span>
+									<span class='badge badge-default'>0h 0m 1s+422ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -910,7 +1379,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="122"
+				<li class="test-item"  status="pass" test-id="213"
 					author=""
 					tag=""
 					device="">
@@ -920,8 +1389,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Log out functionality</p>
-							<p class="duration text-sm">0h 0m 6s+85ms</p>
-							<span class="datetime">16:20:46 pm</span>
+							<p class="duration text-sm">0h 0m 7s+396ms</p>
+							<span class="datetime">17:09:06 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -929,9 +1398,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Log out functionality</h5>
-									<span class='badge badge-success'>04.25.2023 16:20:46</span>
-									<span class='badge badge-danger'>04.25.2023 16:20:52</span>
-									<span class='badge badge-default'>0h 0m 6s+85ms</span>
+									<span class='badge badge-success'>05.02.2023 17:09:06</span>
+									<span class='badge badge-danger'>05.02.2023 17:09:13</span>
+									<span class='badge badge-default'>0h 0m 7s+396ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -985,7 +1454,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="132"
+				<li class="test-item"  status="pass" test-id="223"
 					author=""
 					tag=""
 					device="">
@@ -995,8 +1464,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Login To Admin Panel</p>
-							<p class="duration text-sm">0h 0m 8s+458ms</p>
-							<span class="datetime">16:20:57 pm</span>
+							<p class="duration text-sm">0h 0m 10s+365ms</p>
+							<span class="datetime">17:09:18 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1004,9 +1473,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Login To Admin Panel</h5>
-									<span class='badge badge-success'>04.25.2023 16:20:57</span>
-									<span class='badge badge-danger'>04.25.2023 16:21:05</span>
-									<span class='badge badge-default'>0h 0m 8s+458ms</span>
+									<span class='badge badge-success'>05.02.2023 17:09:18</span>
+									<span class='badge badge-danger'>05.02.2023 17:09:29</span>
+									<span class='badge badge-default'>0h 0m 10s+365ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1067,7 +1536,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="143"
+				<li class="test-item"  status="pass" test-id="234"
 					author=""
 					tag=""
 					device="">
@@ -1077,8 +1546,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Available Data And Functionality On ManageClaims Page</p>
-							<p class="duration text-sm">0h 0m 57s+552ms</p>
-							<span class="datetime">16:21:09 pm</span>
+							<p class="duration text-sm">0h 1m 30s+382ms</p>
+							<span class="datetime">17:09:34 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1086,9 +1555,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Available Data And Functionality On ManageClaims Page</h5>
-									<span class='badge badge-success'>04.25.2023 16:21:09</span>
-									<span class='badge badge-danger'>04.25.2023 16:22:07</span>
-									<span class='badge badge-default'>0h 0m 57s+552ms</span>
+									<span class='badge badge-success'>05.02.2023 17:09:34</span>
+									<span class='badge badge-danger'>05.02.2023 17:11:05</span>
+									<span class='badge badge-default'>0h 1m 30s+382ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1293,31 +1762,80 @@
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Treatment status should reflect upon items selected from treatment status drop down on manage claim page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ManageClaimsSteps.user_clicks_on_manage_claims_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on manage claims icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ManageClaimsSteps.user_selects_any_options_from_treatment_status_dropdown_on_manage_claim_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User selects any options from treatment status dropdown on manage claim page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.ManageClaimsSteps.appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Appropriate treatment status will display on manage claim page under claim details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="184"
+				<li class="test-item"  status="fail" test-id="285"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Check Manage Policy Page Data And Functionality</p>
-							<p class="duration text-sm">0h 1m 21s+910ms</p>
-							<span class="datetime">16:22:12 pm</span>
+							<p class="duration text-sm">0h 1m 37s+454ms</p>
+							<span class="datetime">17:11:09 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Check Manage Policy Page Data And Functionality</h5>
-									<span class='badge badge-success'>04.25.2023 16:22:12</span>
-									<span class='badge badge-danger'>04.25.2023 16:23:34</span>
-									<span class='badge badge-default'>0h 1m 21s+910ms</span>
+									<h5 class="test-status text-fail">Check Manage Policy Page Data And Functionality</h5>
+									<span class='badge badge-success'>05.02.2023 17:11:09</span>
+									<span class='badge badge-danger'>05.02.2023 17:12:47</span>
+									<span class='badge badge-default'>0h 1m 37s+454ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1463,9 +1981,12 @@
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">Verify that the user can download the client's policy letter</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
 				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
 			</div>
 		</div>
 				<div class="collapse">
@@ -1506,12 +2027,17 @@
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start then" title="steps.PolicyPageSteps.user_will_able_to_see_downloaded_policy_page()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
 								</span>
 								<span>Then User will able to see downloaded policy page</span>
 							</div>
-				<div class="details"></div>
+				<textarea disabled class="code-block">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at steps.PolicyPageSteps.user_will_able_to_see_downloaded_policy_page(PolicyPageSteps.java:92)
+	at ✽.User will able to see downloaded policy page(file:///C:/Users/prowe/IdeaProjects/PetCoverAdminBdd/src/test/resources/features/Policy.feature:21)
+</textarea>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -1519,6 +2045,14 @@
 								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
 							</div>
 				<div class="details">http://52.32.106.250:7779/</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
 					</div>
 				</div>
 	</div>
@@ -1574,28 +2108,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="235"
+				<li class="test-item"  status="pass" test-id="336"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Data And Functionality Of Manage Quote Page</p>
-							<p class="duration text-sm">0h 1m 46s+691ms</p>
-							<span class="datetime">16:23:38 pm</span>
+							<p class="duration text-sm">0h 2m 11s+699ms</p>
+							<span class="datetime">17:12:51 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">Verify Data And Functionality Of Manage Quote Page</h5>
-									<span class='badge badge-success'>04.25.2023 16:23:38</span>
-									<span class='badge badge-danger'>04.25.2023 16:25:25</span>
-									<span class='badge badge-default'>0h 1m 46s+691ms</span>
+									<h5 class="test-status text-pass">Verify Data And Functionality Of Manage Quote Page</h5>
+									<span class='badge badge-success'>05.02.2023 17:12:51</span>
+									<span class='badge badge-danger'>05.02.2023 17:15:03</span>
+									<span class='badge badge-default'>0h 2m 11s+699ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1832,12 +2366,9 @@
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
 				<div class="node">On the Add Quote page, verify that the Product dropdown lists Dog, Cat, Exotic, and Introductory Cover</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
 				</div>
-					<div class="status-avatar float-right mr-4">
-						<i class="fa fa-paperclip"></i>
-					</div>
 			</div>
 		</div>
 				<div class="collapse">
@@ -1864,21 +2395,12 @@
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start then" title="steps.QuotePageSteps.on_add_quote_page_product_dropdown_will_appear_with_desired_list()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
 								<span>Then On add quote page product dropdown will appear with desired list</span>
 							</div>
-				<textarea disabled class="code-block">java.lang.AssertionError: expected [ Select Exotic Cat Dog Introductory Cover ] but found [ Select Exotic Cat Dog Introductory Cover Horse BB Commercial ]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at steps.QuotePageSteps.on_add_quote_page_product_dropdown_will_appear_with_desired_list(QuotePageSteps.java:115)
-	at ✽.On add quote page product dropdown will appear with desired list(file:///C:/Users/prowe/IdeaProjects/PetCoverAdminBdd/src/test/resources/features/QuotePage.feature:27)
-</textarea>
+				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -1886,14 +2408,6 @@
 								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
 							</div>
 				<div class="details">http://52.32.106.250:7779/</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></div>
 					</div>
 				</div>
 	</div>
@@ -1998,7 +2512,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="313"
+				<li class="test-item"  status="pass" test-id="414"
 					author=""
 					tag=""
 					device="">
@@ -2008,8 +2522,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Report page hyperlinks</p>
-							<p class="duration text-sm">0h 0m 13s+375ms</p>
-							<span class="datetime">16:25:30 pm</span>
+							<p class="duration text-sm">0h 0m 16s+426ms</p>
+							<span class="datetime">17:15:07 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -2017,9 +2531,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Report page hyperlinks</h5>
-									<span class='badge badge-success'>04.25.2023 16:25:30</span>
-									<span class='badge badge-danger'>04.25.2023 16:25:43</span>
-									<span class='badge badge-default'>0h 0m 13s+375ms</span>
+									<span class='badge badge-success'>05.02.2023 17:15:07</span>
+									<span class='badge badge-danger'>05.02.2023 17:15:23</span>
+									<span class='badge badge-default'>0h 0m 16s+426ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -2031,7 +2545,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">All hyperlinks with icons on setting page should work</div>
+				<div class="node">Sorting data on quote report page via quote number</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -2053,60 +2567,25 @@
 								<span>When User clicks on reports icon on left tool bar</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ReportPageSteps.user_will_able_to_see_total_six_section_of_report_category()">
+							<div class="d-flex align-items-center justify-content-start when" title="steps.ReportPageSteps.user_clicks_on_quote_report_button_on_report_button()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Then User will able to see total six section of report category</span>
+								<span>When User clicks on quote report button on report button</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+							<div class="d-flex align-items-center justify-content-start and" title="steps.ReportPageSteps.user_selects_quote_number_option_from_sort_by_and_ascceding_option_from_sort_direction_drop_down()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">http://52.32.106.250:7779/</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">User will able to redirect on respected report page by clicking on report icon on report page</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
-				</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+								<span>And User selects quote number option from sort by and Ascceding option from sort direction drop down</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ReportPageSteps.user_clicks_on_reports_icon_on_left_tool_bar()">
+							<div class="d-flex align-items-center justify-content-start then" title="steps.ReportPageSteps.all_data_on_quote_report_page_displays_with_quote_number_and_acsceding_manner()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When User clicks on reports icon on left tool bar</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.ReportPageSteps.user_clicks_on_reports_icon()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When User clicks on reports icon</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.ReportPageSteps.respected_report_page_displays()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then Respected report page displays</span>
+								<span>Then All data on quote report page displays with quote number and acsceding manner</span>
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -2122,7 +2601,7 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="333"
+				<li class="test-item"  status="pass" test-id="426"
 					author=""
 					tag=""
 					device="">
@@ -2132,8 +2611,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Setting page hyperlinks</p>
-							<p class="duration text-sm">0h 0m 4s+653ms</p>
-							<span class="datetime">16:25:49 pm</span>
+							<p class="duration text-sm">0h 0m 7s+21ms</p>
+							<span class="datetime">17:15:28 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -2141,9 +2620,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Verify Setting page hyperlinks</h5>
-									<span class='badge badge-success'>04.25.2023 16:25:49</span>
-									<span class='badge badge-danger'>04.25.2023 16:25:54</span>
-									<span class='badge badge-default'>0h 0m 4s+653ms</span>
+									<span class='badge badge-success'>05.02.2023 17:15:28</span>
+									<span class='badge badge-danger'>05.02.2023 17:15:35</span>
+									<span class='badge badge-default'>0h 0m 7s+21ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -2204,28 +2683,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="344"
+				<li class="test-item"  status="fail" test-id="437"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Verify Data And Functionality Of Task Page</p>
-							<p class="duration text-sm">0h 0m 17s+252ms</p>
-							<span class="datetime">16:25:58 pm</span>
+							<p class="duration text-sm">0h 1m 34s+63ms</p>
+							<span class="datetime">17:15:42 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Verify Data And Functionality Of Task Page</h5>
-									<span class='badge badge-success'>04.25.2023 16:25:58</span>
-									<span class='badge badge-danger'>04.25.2023 16:26:15</span>
-									<span class='badge badge-default'>0h 0m 17s+252ms</span>
+									<h5 class="test-status text-fail">Verify Data And Functionality Of Task Page</h5>
+									<span class='badge badge-success'>05.02.2023 17:15:42</span>
+									<span class='badge badge-danger'>05.02.2023 17:17:16</span>
+									<span class='badge badge-default'>0h 1m 34s+63ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -2339,6 +2818,284 @@
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data of manage task page using select dropdown of page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_status_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from status dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.status_tage_of_manage_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Status tage of manage task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data of manage task page using priority dropdown on page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_priority_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from priority dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_priority_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Data under priority column of task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data of manage task page using type dropdown on page</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+					<div class="status-avatar float-right mr-4">
+						<i class="fa fa-paperclip"></i>
+					</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_type_dropdown_on_manage_task_page()">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>When User Selects any option from type dropdown on manage task page</span>
+							</div>
+				<textarea disabled class="code-block">org.openqa.selenium.JavascriptException: javascript error: Invalid left-hand side in assignment
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PROWERSE-014', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efaa881fdc72871976fb0f903dc4a0db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at pages.TaskPage.selectOptionFromTypeDropDown(TaskPage.java:150)
+	at steps.TaskPageSteps.user_selects_any_option_from_type_dropdown_on_manage_task_page(TaskPageSteps.java:83)
+	at ✽.User Selects any option from type dropdown on manage task page(file:///C:/Users/prowe/IdeaProjects/PetCoverAdminBdd/src/test/resources/features/TaskPage.feature:26)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_type_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then Data under type column of task data displays accordingly</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.takeScreenShotOnFailure(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details"></div>
+				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Filter data of manage task page using client dropdown on page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_selects_any_option_from_client_dropdown_on_manage_task_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User Selects any option from client dropdown on manage task page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.data_under_client_column_of_task_data_displays_accordingly()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Data under client column of task data displays accordingly</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">To check task details should open after clicking on task title on manage task page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="steps.ClientPageSteps.user_should_log_in_with_username_and_password_to_the_admin_panel(java.lang.String,java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_icon_on_left_tool_bar()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task icon on left tool bar</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="steps.TaskPageSteps.user_clicks_on_task_tile_on_task_manage_page()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When User clicks on task tile on task manage page</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="steps.TaskPageSteps.task_details_window_will_open_with_all_task_details()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then Task details window will open with all task details</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">http://52.32.106.250:7779/</div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
@@ -2372,7 +3129,7 @@
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">3</span>
 					</a>
 				</li>
 			</ul>
@@ -2405,8 +3162,8 @@
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>16:20:34 pm</td>
-									<td class='linked' test-id='105'>
+									<td>17:08:55 pm</td>
+									<td class='linked' test-id='196'>
 										Then User is able to see tag "Client" and number of total client "29733" and monthly client "37"
 										<div class="">
 											<span class="badge badge-default">Verify all details of dashboard</span>
@@ -2443,11 +3200,49 @@
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>16:24:41 pm</td>
-									<td class='linked' test-id='289'>
-										Then On add quote page product dropdown will appear with desired list
+									<td>17:12:28 pm</td>
+									<td class='linked' test-id='322'>
+										Then User will able to see downloaded policy page
 										<div class="">
-											<span class="badge badge-default">On the Add Quote page, verify that the Product dropdown lists Dog, Cat, Exotic, and Introductory Cover</span>
+											<span class="badge badge-default">Verify that the user can download the client's policy letter</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">org.openqa.selenium.JavascriptException</p>
+							<p class="duration text-sm">1 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>org.openqa.selenium.JavascriptException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>17:16:40 pm</td>
+									<td class='linked' test-id='484'>
+										When User Selects any option from type dropdown on manage task page
+										<div class="">
+											<span class="badge badge-default">Filter data of manage task page using type dropdown on page</span>
 										</div>
 									</td>
 								</tr>
@@ -2486,12 +3281,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='85.714%'>
-						<b>12</b> features passed
+					<div><small data-tooltip='78.571%'>
+						<b>11</b> features passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='14.286%'><b>2</b> features failed, 
+						<small data-tooltip='21.429%'><b>3</b> features failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -2509,9 +3304,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='94.286%'><b>33</b> scenarios passed</small></div>
+					<div><small data-tooltip='93.75%'><b>45</b> scenarios passed</small></div>
 					<div>
-						<small data-tooltip='5.714%'><b>2</b> scenarios failed, 
+						<small data-tooltip='6.25%'><b>3</b> scenarios failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -2529,10 +3324,10 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='97.175%'><b>172</b> steps passed</small></div>
+					<div><small data-tooltip='97.266%'><b>249</b> steps passed</small></div>
 					<div>
-						<small data-tooltip='1.13%'><b>2</b> steps failed, 
-						<b>3</b> skipped, <b data-tooltip='1.695%'>0</b> others
+						<small data-tooltip='1.172%'><b>3</b> steps failed, 
+						<b>4</b> skipped, <b data-tooltip='1.562%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -2549,7 +3344,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">14</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>85.71%</span>
+							<span>78.57%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -2565,10 +3360,10 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Scenarios</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">35</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">48</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>94.29%</span>
+							<span>93.75%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -2584,7 +3379,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Apr 25, 2023 04:18:52 pm</h4>
+							<h4 class="font-weight-light mt-4">May 2, 2023 05:03:36 pm</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -2600,7 +3395,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 7m 23s+686ms</h4>
+							<h4 class="font-weight-light mt-4">0h 13m 39s+710ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -2670,48 +3465,48 @@
 <script>
 	var statusGroup = {
 	    parentCount: 14,
-		passParent: 12,
-		failParent: 2,
+		passParent: 11,
+		failParent: 3,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 2,
-		childCount: 35,
-		passChild: 33,
-		failChild: 2,
+		exceptionsParent: 3,
+		childCount: 48,
+		passChild: 45,
+		failChild: 3,
 		fatalChild: 0,
 		errorChild: 0,
 		warningChild: 0,
 		skipChild: 0,
 		infoChild: 0,
 		debugChild: 0,
-		exceptionsChild: 2,
-		grandChildCount: 177,
-		passGrandChild: 172,
-		failGrandChild: 2,
+		exceptionsChild: 3,
+		grandChildCount: 256,
+		passGrandChild: 249,
+		failGrandChild: 3,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
-		skipGrandChild: 3,
+		skipGrandChild: 4,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 5,
-		eventsCount: 177,
-		passEvents: 135,
-		failEvents: 2,
+		exceptionsGrandChild: 7,
+		eventsCount: 256,
+		passEvents: 198,
+		failEvents: 3,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 3,
-		infoEvents: 37,
+		skipEvents: 4,
+		infoEvents: 51,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "Verify account page hyperlinks":4.703,"Check Admin Page Data And Functionality":27.974,"Verify Available Data And Functionality On Approve Page":7.368,"Verify Data Of Manage Client Page":35.791,"Verify DashBoard Items":3.181,"Launched Page Verification by displayed text":1.405,"Verify Log out functionality":6.085,"Login To Admin Panel":8.458,"Verify Available Data And Functionality On ManageClaims Page":57.552,"Check Manage Policy Page Data And Functionality":81.91,"Verify Data And Functionality Of Manage Quote Page":106.691,"Verify Report page hyperlinks":13.375,"Verify Setting page hyperlinks":4.653,"Verify Data And Functionality Of Task Page":17.252
+	        "Verify account page hyperlinks":7.93,"Check Admin Page Data And Functionality":176.812,"Verify Available Data And Functionality On Approve Page":11.815,"Verify Data Of Manage Client Page":63.947,"Verify DashBoard Items":5.382,"Launched Page Verification by displayed text":1.422,"Verify Log out functionality":7.396,"Login To Admin Panel":10.365,"Verify Available Data And Functionality On ManageClaims Page":90.382,"Check Manage Policy Page Data And Functionality":97.454,"Verify Data And Functionality Of Manage Quote Page":131.699,"Verify Report page hyperlinks":16.426,"Verify Setting page hyperlinks":7.021,"Verify Data And Functionality Of Task Page":94.063
 	};
 </script>
                 </div>

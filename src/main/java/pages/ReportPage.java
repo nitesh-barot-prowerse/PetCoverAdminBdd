@@ -33,6 +33,14 @@ public class ReportPage {
 
     private By searchButton = By.cssSelector("button[id='SearchGrid']");
 
+    private By sortByDropDown=By.xpath("//div[@id='search']/div[2]/div[1]/div/span/span");
+
+    private By optionFromSortByDD=By.xpath("//ul[@id='SortName_listbox']/li[2]");
+
+    private By sortByDirectionDropDown=By.xpath("//div[@id='search']/div[2]/div[2]/div/span/span");
+
+    private By optionFromSortByDirectionDD=By.xpath("//ul[@id='SortDirection2_listbox']/li[2]");
+
     public void clickOnReportIcon() {
         driver.findElement(reportIcon).click();
 
@@ -104,6 +112,28 @@ public class ReportPage {
 
         }
         return details;
+    }
+
+    public void selectOptionFromSortByDropDown(){
+        driver.findElement(sortByDropDown).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromSortByDD).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(sortByDirectionDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromSortByDirectionDD).click();
     }
 
 }

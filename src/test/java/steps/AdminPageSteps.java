@@ -34,8 +34,8 @@ public class AdminPageSteps {
 
     @Then("User will redirects to edit letter template page")
     public void user_will_redirects_to_edit_letter_template_page() {
-     String Message=adminPage.displayedMessage();
-     Assert.assertEquals(Message,"Edit Letter Template");
+        String Message = adminPage.displayedMessage();
+        Assert.assertEquals(Message, "Edit Letter Template");
     }
 
     @Then("User will able to edit available fields on page")
@@ -50,8 +50,144 @@ public class AdminPageSteps {
 
     }
 
+    @When("User clicks on product icon administration page")
+    public void user_clicks_on_product_icon_administration_page() {
+        adminPage.clickOnProductIcon();
+
+    }
+
+    @When("User clicks on product code on manage product page")
+    public void user_clicks_on_product_code_on_manage_product_page() {
+        adminPage.clickOnProductCode();
+    }
+
+    @Then("View product page displays with all product details")
+    public void view_product_page_displays_with_all_product_details() {
+        String productCode = adminPage.verifyProductDetails();
+        System.out.println(productCode);
+    }
+
+    @When("User clicks on insurer configuration icon")
+    public void user_clicks_on_insurer_configuration_icon() {
+        adminPage.clickOnInsurerConfigIcon();
+
+    }
+
+    @Then("Insurer configuration displays with all details")
+    public void insurer_configuration_displays_with_all_details() {
+        String insurerDetail = adminPage.fetchInsurerPageData();
+        System.out.println(insurerDetail);
+
+    }
+
+    @When("User clicks on agent configuration icon")
+    public void user_clicks_on_agent_configuration_icon() {
+        adminPage.clickOnAgentConfigIcon();
+
+    }
+
+    @Then("Agent configuration displays with all details")
+    public void agent_configuration_displays_with_all_details() {
+        //String agentDetail=adminPage.fetchAgentConfigData();
+        //System.out.println(agentDetail);
+    }
+
+    @When("User clicks on department icon on administrator page")
+    public void user_clicks_on_department_icon_on_administrator_page() {
+        adminPage.clickDepartmentIcon();
+
+    }
+
+    @When("User enters department value in to search input on manage department page")
+    public void user_enters_department_value_in_to_search_input_on_manage_department_page() {
+        adminPage.enterDepartmentInSearch();
+
+    }
+
+    @When("User clicks on search button on manage department page")
+    public void user_clicks_on_search_button_on_manage_department_page() {
+        adminPage.clickSearchButton();
+
+    }
+
+    @Then("Respected data upon department value will display on manage department page")
+    public void respected_data_upon_department_value_will_display_on_manage_department_page() {
+        String department = adminPage.verifyDepartmentName();
+        if (department.contains("Inbound")) {
+            System.out.println("required data has displayed");
+        } else {
+            Assert.fail();
+        }
+
+    }
+
+    @When("User clicks on bank account icon")
+    public void user_clicks_on_bank_account_icon() {
+        adminPage.clickOnBankAccountIcon();
+    }
+
+    @Then("Manage bank account page displays with all details")
+    public void manage_bank_account_page_displays_with_all_details() {
+        String bankDetails = adminPage.fetchAndDisplayBankAccountData();
+        System.out.println(bankDetails);
+
+    }
+
+    @When("User clicks on bank icon on administration page")
+    public void user_clicks_on_bank_icon_on_administration_page() {
+        adminPage.clickOnBankAccountIcon();
+
+    }
+
+    @When("User selects any item from bank account drop down")
+    public void user_selects_any_item_from_bank_account_drop_down() {
+        adminPage.selectItemFromBankDropDown();
+    }
+
+    @When("User selects any item from insurer drop down")
+    public void user_selects_any_item_from_insurer_drop_down() {
+        adminPage.selectItemFromInsurerDropDown();
+
+    }
 
 
+    @When("User clicks on search button on manage bank account page")
+    public void user_clicks_on_search_button_on_manage_bank_account_page() {
+        adminPage.clickSearchButton();
+
+    }
+
+    @Then("User will find respected data under bank detail table")
+    public void user_will_find_respected_data_under_bank_detail_table() {
+        String bankInformation = adminPage.verifyBankAccountDetails();
+        System.out.println(bankInformation);
+
+    }
+
+    @When("User clicks on add bank account icon on manage bank account page")
+    public void user_clicks_on_add_bank_account_icon_on_manage_bank_account_page() {
+        adminPage.clickOnAddBankAccountIcon();
+
+    }
+
+    @Then("Add bank account page displays with all details")
+    public void add_bank_account_page_displays_with_all_details() {
+        String Message = adminPage.verifyAddBankAccountPage();
+        Assert.assertEquals(Message, "Bank Account Details");
+
+    }
+
+    @When("User clicks on edit icon against insurer name on manage bank account page")
+    public void user_clicks_on_edit_icon_against_insurer_name_on_manage_bank_account_page() {
+        adminPage.clickOnEditIconOfInsurer();
+
+    }
+
+    @Then("Edit Bank account page displays with all fields in editable format")
+    public void edit_bank_account_page_displays_with_all_fields_in_editable_format() {
+        adminPage.editDataOfEditBankAccountPage();
+
+    }
 
 
 }

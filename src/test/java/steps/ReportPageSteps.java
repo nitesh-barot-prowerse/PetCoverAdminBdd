@@ -59,4 +59,15 @@ public class ReportPageSteps {
 
     }
 
+    @When("User selects quote number option from sort by and Ascceding option from sort direction drop down")
+    public void user_selects_quote_number_option_from_sort_by_and_ascceding_option_from_sort_direction_drop_down() {
+        reportPage.selectOptionFromSortByDropDown();
+
+    }
+
+    @Then("All data on quote report page displays with quote number and acsceding manner")
+    public void all_data_on_quote_report_page_displays_with_quote_number_and_acsceding_manner() {
+
+    }
+
 }

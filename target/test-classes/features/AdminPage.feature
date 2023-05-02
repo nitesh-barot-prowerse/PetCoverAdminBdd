@@ -17,5 +17,46 @@ Feature: Check Admin Page Data And Functionality
   Scenario:  Verify that the Administration page displays with a set of icons.Corresponding page opens on clicking icon.
     Then Account page displays with icons and corresponding page displays by clicking on icon.
 
+  Scenario: To verify whether View Product page displays with product details with status after by clicking on product code on manage product page
+    When User clicks on product icon administration page
+    And User clicks on product code on manage product page
+    Then View product page displays with all product details
 
+  Scenario: To verify if insurer pop up windows displays by  clicking on insurer configuration pop up on setting icon on manage product page
+    When User clicks on product icon administration page
+    And User clicks on insurer configuration icon
+    Then Insurer configuration displays with all details
+
+  Scenario: To verify if agent configuration pop up windows displays by  clicking on agent configuration on setting icon on manage product page
+    When User clicks on product icon administration page
+    And User clicks on agent configuration icon
+    Then Agent configuration displays with all details
+
+  Scenario: Filter data on manage department page upon entering respective department value in search box
+    When User clicks on department icon on administrator page
+    When User enters department value in to search input on manage department page
+    And User clicks on search button on manage department page
+    Then Respected data upon department value will display on manage department page
+
+  Scenario: Manage Bank Account page displays with all details by clicking on bank account icon on administration page
+    When User clicks on bank account icon
+    Then Manage bank account page displays with all details
+
+
+  Scenario: Filter data of bank details upon bank account and insurer drop down items on manage bank account page
+    When User clicks on bank icon on administration page
+    And User selects any item from bank account drop down
+    And User selects any item from insurer drop down
+    And User clicks on search button on manage bank account page
+    Then User will find respected data under bank detail table
+
+  Scenario: Add Bank account page displays with details after clicking on add bank account button on manage bank account page
+    When User clicks on bank icon on administration page
+    And User clicks on add bank account icon on manage bank account page
+    Then Add bank account page displays with all details
+
+  Scenario: On the manage bank account page , click the Edit icon against a insurer name. The Edit Bank Account page should open with the  data in editable format.
+    When User clicks on bank icon on administration page
+    And User clicks on edit icon against insurer name on manage bank account page
+    Then Edit Bank account page displays with all fields in editable format
 
