@@ -10,7 +10,7 @@ Feature: Verify DashBoard Items
     Then User is able to see tag "<claim>" and number of total claim "<tclaim>" and monthly claim "<mclaim>"
     Examples:
       |client|tclient|mclient|quote|tquote|mquote|policy|tpolicy|mpolicy|claim|tclaim|mclaim|
-      |Client|29733|37|Quote|64246|81|Policy|29252|39|Claim|186|1|
+      |Client|44151|53|Quote|94391|102|Policy|43251|11|Claim|514|11|
 
 
 

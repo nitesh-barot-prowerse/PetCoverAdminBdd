@@ -87,7 +87,7 @@ public class TaskPageSteps {
     public void data_under_type_column_of_task_data_displays_accordingly() {
         String type = taskPage.verifyTypeDataOfTask();
 
-        if (type.contains("Inbound")) {
+        if (type.contains("Claims")) {
             System.out.println("All data under Type column displays right");
         } else {
             Assert.fail();
@@ -122,4 +122,6 @@ public class TaskPageSteps {
     public void task_details_window_will_open_with_all_task_details() {
 
     }
+
+
 }

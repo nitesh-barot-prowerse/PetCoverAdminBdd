@@ -194,6 +194,11 @@ public class TaskPage {
     }
 
     public String verifyClientDataOfTask() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebDriverWait wait = new WebDriverWait(driver, 10);
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]")));
         String type = "";

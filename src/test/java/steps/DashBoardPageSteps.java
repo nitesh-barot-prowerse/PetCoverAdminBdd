@@ -1,5 +1,6 @@
 package steps;
 
+import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
@@ -7,7 +8,7 @@ import pages.DashBoardPage;
 import utils.ScreenRecorderUtil;
 
 public class DashBoardPageSteps {
-    DashBoardPage dbp = new DashBoardPage();
+    DashBoardPage dbp=new DashBoardPage(DriverFactory.getDriver());
 
     @Given("User must be logged with username {string} and password {string} in to the admin panel")
     public void user_must_be_logged_with_username_and_password_in_to_the_admin_panel(String string, String string2) {
@@ -37,11 +38,7 @@ public class DashBoardPageSteps {
                 Assert.fail();
             }
         }
-        try {
-            ScreenRecorderUtil.stopRecord();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
     @Then("User is able to see tag {string} and number of total quote {string} and monthly quote {string}")
@@ -103,11 +100,7 @@ public class DashBoardPageSteps {
             }
         }
 
-        try {
-            ScreenRecorderUtil.stopRecord();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+
     }
 
 

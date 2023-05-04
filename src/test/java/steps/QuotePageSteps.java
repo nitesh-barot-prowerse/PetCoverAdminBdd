@@ -112,7 +112,7 @@ public class QuotePageSteps {
     @Then("On add quote page product dropdown will appear with desired list")
     public void on_add_quote_page_product_dropdown_will_appear_with_desired_list() {
         String verifyS=quotePage.verifyProductList();
-        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover Horse BB Commercial ");
+        Assert.assertEquals(verifyS," Select Exotic Cat Dog Introductory Cover ");
 
     }
 

@@ -33,3 +33,4 @@ Feature: Verify Data And Functionality Of Task Page
   Scenario:To check task details should open after clicking on task title on manage task page
     When User clicks on task tile on task manage page
     Then Task details window will open with all task details
+

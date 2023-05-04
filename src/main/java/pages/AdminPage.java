@@ -71,19 +71,53 @@ public class AdminPage {
 
     private By displayedMessageOnAddBankAccount = By.xpath("//form[@id='bankForm']/div/div/div/div/h5");
 
-    private By editIconAgainstInsurer=By.xpath("//div[@id='gridBankAccount']/table/tbody/tr[1]/td[7]/div/a");
+    private By editIconAgainstInsurer = By.xpath("//div[@id='gridBankAccount']/table/tbody/tr[1]/td[7]/div/a");
 
-    private By insurerNameInput=By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[1]/div/div/div/span");
+    private By insurerNameInput = By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[1]/div/div/div/span");
 
-    private By insurerNameInputDD=By.xpath("//ul[@id='Insurer_listbox']/li[3]");
+    private By insurerNameInputDD = By.xpath("//ul[@id='Insurer_listbox']/li[3]");
 
-    private By accountTypeInput= By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[2]/div/div/div/input[2]");
+    private By accountTypeInput = By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[2]/div/div/div/input[2]");
 
-    private By bankAccountNameInput=By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[3]/div/div/div/input");
+    private By bankAccountNameInput = By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[3]/div/div/div/input");
 
-    private By bankAccountNumberInput=By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[4]/div/div/div/input");
+    private By bankAccountNumberInput = By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[4]/div/div/div/input");
 
-    private By bicNUmberInput=By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[5]/div/div/div/input");
+    private By bicNUmberInput = By.xpath("//div[@class='ibox float-e-margins']/div[2]/div[5]/div/div/div/input");
+
+    private By insurerIcon = By.xpath("//div[@class='ibox-content']/div/div[6]/a/i");
+
+    private By displayedMessageOnManageInsurerPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By insurerCode = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]");
+
+    private By displayMessageOfViewInsurerCode = By.xpath("//div[@class='row row0 views']/div[1]/div/div/div[2]/div[1]/dl/dd/h2");
+
+    private By typeDropDownOnManageInsurerPage = By.xpath("//div[@id='search']/div[2]/div/span/span");
+
+    private By itemFromTypeDropDown = By.xpath("//ul[@id='InsurerTypeId_listbox']/li[3]");
+
+    private By categoryDropDownOnManageInsurerPage = By.xpath("//div[@id='search']/div[3]/div/span/span");
+
+    private By itemFromCategoryDropDown = By.xpath("//ul[@id='InsurerCategoryId_listbox']/li[2]");
+
+    private By activeDropDownOnManageInsurerPage = By.xpath("//div[@id='search']/div[4]/div/span/span");
+
+    private By itemFromActiveDropDown = By.xpath("//ul[@id='IsActive_listbox']/li[2]");
+
+    private By searchButtonOnManageInsurerPage = By.xpath("//button[@id='SearchGrid']");
+
+    private By addInsurerIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddInsurerPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By agentIcon = By.xpath("//div[@class='ibox-content']/div/div[7]/a/i");
+
+    private By agentReferenceNumber = By.xpath("//div[@id='gridName']/table/tbody/tr/td[2]");
+
+    private By displayedMessageOnViewAgentPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div[1]/h2");
+
+    private By companyIcon = By.xpath("//div[@class='ibox-content']/div/div[8]/a/i");
 
 
     public void clickAdminIcon() {
@@ -93,6 +127,7 @@ public class AdminPage {
     public void clickOnLetterIcon() {
         driver.findElement(letterIcon).click();
     }
+
 
     public String fetchData() {
         WebDriverWait waitR = new WebDriverWait(driver, 10);
@@ -339,7 +374,7 @@ public class AdminPage {
         return driver.findElement(displayedMessageOnAddBankAccount).getText();
     }
 
-    public void clickOnEditIconOfInsurer(){
+    public void clickOnEditIconOfInsurer() {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -354,7 +389,7 @@ public class AdminPage {
 
     }
 
-    public void editDataOfEditBankAccountPage(){
+    public void editDataOfEditBankAccountPage() {
         driver.findElement(insurerNameInput).click();
         try {
             Thread.sleep(1000);
@@ -378,6 +413,137 @@ public class AdminPage {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public void clickOnInsurerIcon() {
+        driver.findElement(insurerIcon).click();
+
+    }
+
+    public String verifyManageInsurerPage() {
+
+        return driver.findElement(displayedMessageOnManageInsurerPage).getText();
+    }
+
+    public void clickOnInsurerCodeLink() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(insurerCode).click();
+
+    }
+
+    public String verifyViewInsurerPage() {
+        return driver.findElement(displayMessageOfViewInsurerCode).getText();
+
+    }
+
+    public void selectsOptionFromDropDownOnManageInsurerPage() {
+        driver.findElement(typeDropDownOnManageInsurerPage).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(itemFromTypeDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(categoryDropDownOnManageInsurerPage).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(itemFromCategoryDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(activeDropDownOnManageInsurerPage).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(itemFromActiveDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(searchButtonOnManageInsurerPage).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyListOfManageInsurerPageUponDD() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> typeDD = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[4]")));
+        String typeValue = " ";
+        for (WebElement type : typeDD) {
+            typeValue = typeValue + type.getText();
+        }
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        List<WebElement> categoryDD = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]")));
+        String categoryValue = " ";
+        for (WebElement category : categoryDD) {
+            categoryValue = categoryValue + category.getText();
+        }
+        return typeValue + categoryValue;
+
+    }
+
+    public void clickOnAddInsurerIcon() {
+        driver.findElement(addInsurerIcon).click();
+
+    }
+
+    public String verifyAddInsurerPage() {
+        return driver.findElement(displayedMessageOnAddInsurerPage).getText();
+    }
+
+    public void clickOnAgentIcon() {
+        driver.findElement(agentIcon).click();
+
+    }
+
+    public void clickOnAgentReferenceNumber() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> agentRef = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(agentReferenceNumber));
+        for (WebElement agent : agentRef) {
+            agent.click();
+            break;
+        }
+
+    }
+
+    public String verifyViewAgentPage() {
+        return driver.findElement(displayedMessageOnViewAgentPage).getText();
+    }
+
+    public void clickOnCompanyIcon() {
+        driver.findElement(companyIcon).click();
+    }
+
+    public String fetchAndDisplaysManageCompanyDetails() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> companyDetails = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td")));
+        String companyDetail = " ";
+        for (WebElement company : companyDetails) {
+            companyDetail = companyDetail + company.getText();
+
+        }
+        return companyDetail;
     }
 
 

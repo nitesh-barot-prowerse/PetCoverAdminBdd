@@ -189,5 +189,88 @@ public class AdminPageSteps {
 
     }
 
+    @When("User clicks on insurer icon on administration page")
+    public void user_clicks_on_insurer_icon_on_administration_page() {
+        adminPage.clickOnInsurerIcon();
+
+    }
+
+    @Then("Manage insurer page will displays with all details")
+    public void manage_insurer_page_will_displays_with_all_details() {
+        String message = adminPage.verifyManageInsurerPage();
+        Assert.assertEquals(message, "Manage Insurer");
+
+    }
+
+    @When("User clicks on insurerCode link on manage insurer page")
+    public void user_clicks_on_insurer_code_link_on_manage_insurer_page() {
+        adminPage.clickOnInsurerCodeLink();
+
+    }
+
+    @Then("View insurer page displays with current insurer details")
+    public void view_insurer_page_displays_with_current_insurer_details() {
+        String message = adminPage.verifyViewInsurerPage();
+        Assert.assertEquals(message, "Insurer - AL01");
+
+    }
+
+    @When("User selects appropriate options from Type,Category and Active drop down")
+    public void user_selects_appropriate_options_from_type_category_and_active_drop_down() {
+        adminPage.selectsOptionFromDropDownOnManageInsurerPage();
+
+    }
+
+    @Then("On manage insurer page list of data reflects upon drop downs values")
+    public void on_manage_insurer_page_list_of_data_reflects_upon_drop_downs_values() {
+        String verifyManageInsurerList = adminPage.verifyListOfManageInsurerPageUponDD();
+        System.out.println(verifyManageInsurerList);
+
+    }
+
+    @When("User clicks on add insurer icon on manage insurer page")
+    public void user_clicks_on_add_insurer_icon_on_manage_insurer_page() {
+        adminPage.clickOnAddInsurerIcon();
+
+    }
+
+    @Then("Add insurer page displays with all fields")
+    public void add_insurer_page_displays_with_all_fields() {
+        String message = adminPage.verifyAddInsurerPage();
+        Assert.assertEquals(message, "Add Insurer");
+
+    }
+
+    @When("User clicks on agent icon")
+    public void user_clicks_on_agent_icon() {
+        adminPage.clickOnAgentIcon();
+
+    }
+
+    @When("User clicks on agent reference number under list of agent details")
+    public void user_clicks_on_agent_reference_number_under_list_of_agent_details() {
+     adminPage.clickOnAgentReferenceNumber();
+    }
+
+    @Then("View agent page displays with all information")
+    public void view_agent_page_displays_with_all_information() {
+       String message=adminPage.verifyViewAgentPage();
+       Assert.assertEquals(message,"View Agent");
+
+    }
+
+    @When("User clicks on company icon")
+    public void user_clicks_on_company_icon() {
+        adminPage.clickOnCompanyIcon();
+
+    }
+
+    @Then("Manage company page displays with list of available companies")
+    public void manage_company_page_displays_with_list_of_available_companies() {
+        String companyDetail=adminPage.fetchAndDisplaysManageCompanyDetails();
+        System.out.println(companyDetail);
+
+    }
+
 
 }

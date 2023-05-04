@@ -54,7 +54,7 @@ public class ClientPage {
     }
 
     public void enterCodeDetails(){
-        driver.findElement(searchBox).sendKeys("JAMI-0016");
+        driver.findElement(searchBox).sendKeys("DANK-00005");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

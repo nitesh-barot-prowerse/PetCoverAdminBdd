@@ -49,7 +49,7 @@ public class ClientPageSteps {
     @Then("Appropriate client information displays inside table on manage client page")
     public void appropriate_client_information_displays_inside_table_on_manage_client_page() {
      String clientCode=clientPage.verifyClient();
-     Assert.assertEquals(clientCode,"JAMI-0016");
+     Assert.assertEquals(clientCode,"DANK-00005");
     }
 
     @When("User selects appropriate option from Active dropdown on manage client page")
@@ -82,7 +82,7 @@ public class ClientPageSteps {
     @Then("Add quote page displays with same client code")
     public void add_quote_page_displays_with_same_client_code() {
     String clientId=clientPage.verifyExistingClientOnAddQuote();
-    Assert.assertEquals(clientId,"JAMI-0016");
+    Assert.assertEquals(clientId,"DANK-00005");
     }
 
 
