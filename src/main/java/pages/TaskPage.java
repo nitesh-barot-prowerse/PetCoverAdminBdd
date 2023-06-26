@@ -39,14 +39,19 @@ public class TaskPage {
 
     private By typeDropDown = By.xpath("//div[@id='search']/div[4]/div/span/span");
 
-    private By optionUnderTypeDropDown = By.xpath("//ul[@id='TaskPriorityId_listbox']/li[2]");
+    private By optionUnderTypeDropDown = By.xpath("//ul[@id='TaskTypeId_listbox']/li[2]");
 
     private By clientDropDown = By.xpath("//div[@id='search']/div[5]/div/span/span");
 
-    private By optionUnderClinetrDropDown = By.xpath("//ul[@id='ClientId_listbox']/li[@data-offset-index='18677']");
+    private By optionUnderClinetrDropDown = By.xpath("//ul[@id='ClientId_listbox']/li[4]");
 
     public void clickOnTaskIcon() {
         driver.findElement(taskIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String verifyTaskPage() {
@@ -63,8 +68,15 @@ public class TaskPage {
         return data;
     }
 
+    //To check whether Assign to dropdown on add task page appears with current user after clicking on add task button on add task page
+
     public void clickAddTaskButton() {
         driver.findElement(addTaskButton).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String verifyAddTaskPage() {
@@ -91,6 +103,8 @@ public class TaskPage {
 
     }
 
+    //Appropriate data should display upon selecting an option from the status drop down on managing task page
+
     public void selectOptionFromStatus() {
         driver.findElement(statusDropDown).click();
         try {
@@ -100,12 +114,17 @@ public class TaskPage {
         }
         driver.findElement(openOptionFromStatusDropDown).click();
         driver.findElement(searchButton).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
     public String verifyStatusOfManageTaskData() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        List<WebElement> statusValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[8]/div")));
+        List<WebElement> statusValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String status = "";
         for (WebElement element : statusValue) {
             status = status + element.getText() + " ";
@@ -115,7 +134,7 @@ public class TaskPage {
 
 
     }
-
+ //Appropriate data should display upon selecting an option from the priority drop down on managing task page
     public void selectOptionFromPriorityDropDown() {
         driver.findElement(priorityDropDown).click();
         try {
@@ -125,12 +144,17 @@ public class TaskPage {
         }
         driver.findElement(optionUnderPriorityDropdown).click();
         driver.findElement(searchButton).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
     public String verifyPriorityDataOfTask() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        List<WebElement> priorityValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[9]")));
+        List<WebElement> priorityValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String priority = "";
         for (WebElement element : priorityValue) {
             priority = priority + element.getText() + " ";
@@ -139,27 +163,33 @@ public class TaskPage {
         System.out.println(priority);
         return priority;
     }
+    //Appropriate data should display upon selecting an option from the type drop down on managing task page
 
     public void selectOptionFromTypeDropDown() {
         driver.findElement(typeDropDown).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        /*((JavascriptExecutor) driver).executeScript("document.getElementById('TaskTypeId_listbox').aria-hidden='true';");
+        WebElement element = driver.findElement(By.xpath("//ul[@id='TaskPriorityId_listbox']/li[2]"));
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        wait1.until(ExpectedConditions.visibilityOf(element)).click();*/
+
+        driver.findElement(optionUnderTypeDropDown).click();
+        driver.findElement(searchButton).click();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        ((JavascriptExecutor) driver).executeScript("document.getElementById('TaskTypeId_listbox').aria-hidden='true';");
-        WebElement element = driver.findElement(By.xpath("//ul[@id='TaskPriorityId_listbox']/li[2]"));
-        WebDriverWait wait1 = new WebDriverWait(driver, 10);
-        wait1.until(ExpectedConditions.visibilityOf(element)).click();
-
-        // driver.findElement(optionUnderTypeDropDown).click();
-        driver.findElement(searchButton).click();
 
     }
 
     public String verifyTypeDataOfTask() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        List<WebElement> typeValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[4]")));
+        List<WebElement> typeValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : typeValue) {
             type = type + element.getText() + " ";
@@ -168,6 +198,8 @@ public class TaskPage {
         System.out.println(type);
         return type;
     }
+
+    // Appropriate data should display upon selecting an option from the client drop down on managing task page
 
     public void selectOptionFromClientDropDown() {
         driver.findElement(clientDropDown).click();
@@ -186,7 +218,7 @@ public class TaskPage {
         // driver.findElement(optionUnderTypeDropDown).click();
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -200,7 +232,7 @@ public class TaskPage {
             throw new RuntimeException(e);
         }
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]")));
+        List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : clientValue) {
             type = type + element.getText() + " ";
@@ -210,6 +242,8 @@ public class TaskPage {
         return type;
     }
 
+    //To check task details should open after clicking on task title on manage task page
+
     public void clickAndFetchDataOfTask() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[3]")));
@@ -217,7 +251,7 @@ public class TaskPage {
         for (WebElement element : clientValue) {
             element.click();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
