@@ -51,7 +51,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">May 4, 2023 12:31:23 pm</span>
+                    <span class="badge badge-primary">Nov 21, 2023 02:36:13 pm</span>
                 </a>
             </li>
         </ul>
@@ -67,7 +67,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('tag-view')">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -105,6 +113,14 @@
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
 				</li>
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-tag"></i>
+					</a>
+					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" href="#">@Sanity</a>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<div class="test-list-wrapper scrollable">
@@ -118,19 +134,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">Check Admin Page Data And Functionality</p>
-							<p class="duration text-sm">0h 0m 7s+32ms</p>
-							<span class="datetime">12:31:28 pm</span>
+							<p class="name">Verify Quote Module Features</p>
+							<p class="duration text-sm">0h 2m 9s+795ms</p>
+							<span class="datetime">14:36:26 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Check Admin Page Data And Functionality</h5>
-									<span class='badge badge-success'>05.04.2023 12:31:28</span>
-									<span class='badge badge-danger'>05.04.2023 12:31:35</span>
-									<span class='badge badge-default'>0h 0m 7s+32ms</span>
+									<h5 class="test-status text-pass">Verify Quote Module Features</h5>
+									<span class='badge badge-success'>11.21.2023 14:36:26</span>
+									<span class='badge badge-danger'>11.21.2023 14:38:36</span>
+									<span class='badge badge-default'>0h 2m 9s+795ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -142,7 +158,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">Manage Company page displays with list of companies by clicking on company icon on administration page</div>
+				<div class="node">Generate and save quote  for horse breed using direct debit card payment option</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -157,25 +173,53 @@
 								<span>Given User should log in with username "sa" and password "Good2go@2019" to the admin panel</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_administration_icon_on_left_tool_bar()">
+							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_quote_icon_on_left_tool_bar()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When User clicks on administration icon on left tool bar</span>
+								<span>When User clicks on quote icon on left tool bar</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="steps.AdminPageSteps.user_clicks_on_company_icon()">
+							<div class="d-flex align-items-center justify-content-start when" title="steps.QuotePageSteps.user_clicks_on_add_quote_button()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>When User clicks on company icon</span>
+								<span>When User clicks on add quote button</span>
 							</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="steps.AdminPageSteps.manage_company_page_displays_with_list_of_available_companies()">
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_selects_the_introductory_value_of_horse_form_product_dropdown()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Then Manage company page displays with list of available companies</span>
+								<span>And User selects the introductory value of horse form product dropdown</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_enters_client_details_form(java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User enters client details form "client/client.json"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_selects_horse_species_for_introductory()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User selects horse species for introductory</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_enters_horse_species_information_for_introductory_from(java.lang.String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User enters horse species information for introductory from "quote/horse.json"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="steps.QuotePageSteps.user_calculate_premium_value_for_horse_and_generate_policy_with_direct_debit_payment_mode()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And User calculate premium value for horse and generate policy with direct debit payment mode</span>
 							</div>
 				<div class="details"></div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
@@ -184,11 +228,96 @@
 								</span>
 								<span>hook.hooks.displayUrl(io.cucumber.java.Scenario)</span>
 							</div>
-				<div class="details">http://52.32.106.250:7779/</div>
+				<div class="details">https://stage.petcovergroup.com:8889/</div>
 					</div>
 				</div>
 	</div>
 </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row tag-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tags</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">@Sanity</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>1</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>@Sanity</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
+							
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>14:36:26 pm</td>
+									<td class='linked' test-id='2'>
+										Generate and save quote  for horse breed using direct debit card payment option
+										<div class="">
+											<span class="badge badge-default">Verify Quote Module Features.Generate and save quote  for horse breed using direct debit card payment option</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -265,7 +394,7 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
+					<div><small data-tooltip='100%'><b>9</b> steps passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> steps failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
@@ -320,7 +449,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">May 4, 2023 12:31:23 pm</h4>
+							<h4 class="font-weight-light mt-4">Nov 21, 2023 02:36:13 pm</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -336,7 +465,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 12s+356ms</h4>
+							<h4 class="font-weight-light mt-4">0h 2m 23s+609ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -362,6 +491,39 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tags</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Passed</th>
+								<th>Failed</th>
+								<th>Skipped</th>
+								<th>Others</th>
+								<th>Passed %</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>@Sanity</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									100%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 		<div class="col-md-4">
 			<div class="card">
 				<div class="card-header">
@@ -423,8 +585,8 @@
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 0,
-		grandChildCount: 5,
-		passGrandChild: 5,
+		grandChildCount: 9,
+		passGrandChild: 9,
 		failGrandChild: 0,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
@@ -433,8 +595,8 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 5,
-		passEvents: 4,
+		eventsCount: 9,
+		passEvents: 8,
 		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
@@ -447,7 +609,7 @@
 </script>
 <script>
 	var timeline = {
-	        "Check Admin Page Data And Functionality":7.032
+	        "Verify Quote Module Features":129.795
 	};
 </script>
                 </div>

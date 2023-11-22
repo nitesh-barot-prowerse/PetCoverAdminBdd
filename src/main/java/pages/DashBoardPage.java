@@ -39,6 +39,11 @@ public class DashBoardPage {
     private By monthlyClaims = By.xpath("//div[@class='panel panel-red']/div/div/div[3]/div/span");
 
     public String verifyClientDetails() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         String client = driver.findElement(clientTag).getText();
         String total = driver.findElement(totalClient).getText();;
         String monthly = driver.findElement(monthlyClient).getText();;

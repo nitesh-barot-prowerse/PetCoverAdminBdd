@@ -234,7 +234,7 @@ public class AdminPage {
 
 
     public String fetchData() {
-        WebDriverWait waitR = new WebDriverWait(driver, 10);
+        WebDriverWait waitR = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalRow = waitR.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String data = " ";
         for (WebElement trRow : totalRow) {
@@ -244,7 +244,7 @@ public class AdminPage {
     }
 
     public void clickOnAddLetterTemplateIcon() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalHead = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(editLetterTemplateButton));
         for (WebElement thHead : totalHead) {
             thHead.click();
@@ -275,7 +275,7 @@ public class AdminPage {
 
         ((JavascriptExecutor) driver).executeScript("document.getElementById('DisplayOrder').style.display='block';");
         WebElement element = driver.findElement(By.id("DisplayOrder"));
-        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
         String order = "23";
         wait1.until(ExpectedConditions.visibilityOf(element)).sendKeys(order);
         try {
@@ -284,7 +284,7 @@ public class AdminPage {
             throw new RuntimeException(e);
         }
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(subjectField)).clear();
         driver.findElement(subjectField).sendKeys("Testing Purpose");
         try {
@@ -295,7 +295,7 @@ public class AdminPage {
     }
 
     public void traversingThroughPages() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='ibox-content']/div/div/a")));
         String product = driver.findElement(By.xpath("//div[@class='ibox-content']/div/div[1]/a")).getText();
         if (product.contains("Run Scheduler") || product.contains("Email Logs")) {
@@ -476,7 +476,7 @@ public class AdminPage {
     }
 
     public void clickOnProductCode() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> productCode = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[2]")));
         for (WebElement pCode : productCode) {
             pCode.click();
@@ -499,11 +499,11 @@ public class AdminPage {
 
     public void clickOnInsurerConfigIcon() {
         Actions actions = new Actions(driver);
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> settingIcon = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]/ul/li")));
         for (WebElement stg : settingIcon) {
             actions.moveToElement(stg).perform();
-            WebDriverWait wait1 = new WebDriverWait(driver, 10);
+            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
             List<WebElement> insurerConfig = wait1.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]/ul[1]/li/ul/li[1]/a[1]")));
             for (WebElement insu : insurerConfig) {
                 insu.click();
@@ -519,7 +519,7 @@ public class AdminPage {
     }
 
     public String fetchInsurerPageData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> insurerDetail = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridInsurerConfiguration']/table/tbody/tr")));
         String data=" ";
         for (WebElement details : insurerDetail) {
@@ -534,11 +534,11 @@ public class AdminPage {
 
     public void clickOnAgentConfigIcon() {
         Actions actions = new Actions(driver);
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> settingIcon = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]/ul/li")));
         for (WebElement stg : settingIcon) {
             actions.moveToElement(stg).perform();
-            WebDriverWait wait1 = new WebDriverWait(driver, 10);
+            WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
             List<WebElement> agentConfig = wait1.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]/ul[1]/li/ul/li[2]/a[1]")));
             for (WebElement agent : agentConfig) {
                 agent.click();
@@ -555,7 +555,7 @@ public class AdminPage {
     }
 
     public String fetchAgentConfigData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> insurerDetail = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridAgentConfiguration']/table/tbody/tr")));
         String data=" ";
         for (WebElement details : insurerDetail) {
@@ -591,7 +591,7 @@ public class AdminPage {
     }
 
     public String verifyDepartmentName() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> department = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]")));
         String depart = " ";
         for (WebElement dep : department) {
@@ -669,7 +669,7 @@ public class AdminPage {
     }
 
     public String verifyDetailsOfStaffPage(){
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> staffDetails = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td")));
         String data = " ";
         for (WebElement details : staffDetails) {
@@ -724,7 +724,7 @@ public class AdminPage {
     }
 
     public String fetchAndDisplayBankAccountData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> bankDetails = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridBankAccount']/table/tbody/tr")));
         String bankDetail = " ";
         for (WebElement bankD : bankDetails) {
@@ -770,7 +770,7 @@ public class AdminPage {
     }
 
     public String verifyBankAccountDetails() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> insurerName = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridBankAccount']/table/tbody/tr")));
         String insurer = " ";
         for (WebElement insu : insurerName) {
@@ -854,7 +854,7 @@ public class AdminPage {
     }
 
     public String verifyManageInsurerPage() {
-        WebDriverWait wait=new WebDriverWait(driver,10);
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
         List<WebElement> insurerDetails=wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String insurerData=" ";
         for (WebElement data: insurerDetails){
@@ -931,7 +931,7 @@ public class AdminPage {
     }
 
     public String verifyListOfManageInsurerPageUponDD() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> typeDD = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td")));
         String typeValue = " ";
         for (WebElement type : typeDD) {
@@ -995,7 +995,7 @@ public class AdminPage {
     }
 
     public void clickOnAgentReferenceNumber() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> agentRef = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(agentReferenceNumber));
         for (WebElement agent : agentRef) {
             agent.click();
@@ -1054,7 +1054,7 @@ public class AdminPage {
     }
 
     public String verifyDetailsOfAgentList(){
-        WebDriverWait wait=new WebDriverWait(driver,10);
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
         List<WebElement> agentDetails=wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String data=" ";
         for (WebElement details:agentDetails){
@@ -1119,7 +1119,7 @@ public class AdminPage {
     }
 
     public String fetchAndDisplaysManageCompanyDetails() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> companyDetails = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td")));
         String companyDetail = " ";
         for (WebElement company : companyDetails) {
@@ -1157,7 +1157,7 @@ public class AdminPage {
     }
 
     public String verifyDetailsOfCompany(){
-        WebDriverWait wait=new WebDriverWait(driver,10);
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
         List<WebElement> companyList=wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td")));
         String data=" ";
         for (WebElement details:companyList){

@@ -1,11 +1,17 @@
 package factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import utils.Log;
+
+import java.util.HashMap;
 
 public class DriverFactory {
     public WebDriver driver;
@@ -16,34 +22,82 @@ public class DriverFactory {
     public WebDriver init_browser(String browser) {
 
         System.out.println("The name of the browser is " + browser);
+        Log.info("Name Of Browser Is " +browser);
 
-        if (browser.equals("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            tlLocal.set(new ChromeDriver());
-
-
-        }
-        else if (browser.equals("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            tlLocal.set(new FirefoxDriver());
-
-        }
-        else if (browser.equals("microsoft edge")) {
-            WebDriverManager.edgedriver().setup();
-            tlLocal.set(new EdgeDriver());
-
-        }
-        else if (browser.equals("safari")) {
-            tlLocal.set(new SafariDriver());
-
-        }
-        else {
-            System.out.println("Please pass the correct browser value: " + browser);
+        if (browser == null || browser.isEmpty()) {
+            browser = "chrome";
         }
 
-        getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
-        return getDriver();
+        switch (browser) {
+            case ("chrome"):
+                getChromeDriver();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            case ("chrome-headless"):
+                getChromeHeadlessDriver();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            case ("firefox"):
+                getFirefoxDriver();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            case ("ie"):
+                getInternetExplorerDriver();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            case ("microsoft edge"):
+                getMicrosoftEdge();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            case ("safari"):
+                getSafari();
+                getDriver().manage().deleteAllCookies();
+                getDriver().manage().window().maximize();
+                return getDriver();
+            default:
+                throw new RuntimeException("browser option " + browser + " not supported");
+        }
+
+    }
+
+    private void getChromeDriver() {
+        WebDriver driver1 = new ChromeDriver();
+        tlLocal.set(driver1);
+    }
+
+    private void getChromeHeadlessDriver() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--window-size=1920,1200");
+        WebDriver driver1=new ChromeDriver(options);
+        tlLocal.set(driver1);
+
+    }
+
+    private void getFirefoxDriver() {
+        WebDriver driver1 = new FirefoxDriver();
+        tlLocal.set(driver1);
+
+    }
+
+    private void getInternetExplorerDriver() {
+        WebDriver driver1 = new InternetExplorerDriver();
+        tlLocal.set(driver1);
+    }
+
+    private void getMicrosoftEdge() {
+        WebDriver driver1 = new EdgeDriver();
+        tlLocal.set(driver1);
+
+    }
+
+    private void getSafari() {
+        WebDriver driver1 = new SafariDriver();
+        tlLocal.set(driver1);
     }
 
 

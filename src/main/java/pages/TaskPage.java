@@ -45,6 +45,9 @@ public class TaskPage {
 
     private By optionUnderClinetrDropDown = By.xpath("//ul[@id='ClientId_listbox']/li[4]");
 
+    private By editIconOnManageTaskPage=By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[11]/div/a[1]");
+
+
     public void clickOnTaskIcon() {
         driver.findElement(taskIcon).click();
         try {
@@ -59,7 +62,7 @@ public class TaskPage {
     }
 
     public String fetchData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalRow = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String data = " ";
         for (WebElement rEle : totalRow) {
@@ -91,7 +94,7 @@ public class TaskPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> drop = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@id='AssignedToId_listbox']/li[1]/table/tbody/tr/td")));
         System.out.println(drop.size());
         String rev = "";
@@ -123,7 +126,7 @@ public class TaskPage {
     }
 
     public String verifyStatusOfManageTaskData() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> statusValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String status = "";
         for (WebElement element : statusValue) {
@@ -145,7 +148,7 @@ public class TaskPage {
         driver.findElement(optionUnderPriorityDropdown).click();
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -153,7 +156,7 @@ public class TaskPage {
     }
 
     public String verifyPriorityDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> priorityValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String priority = "";
         for (WebElement element : priorityValue) {
@@ -188,7 +191,7 @@ public class TaskPage {
     }
 
     public String verifyTypeDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> typeValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : typeValue) {
@@ -231,7 +234,7 @@ public class TaskPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String type = "";
         for (WebElement element : clientValue) {
@@ -245,7 +248,7 @@ public class TaskPage {
     //To check task details should open after clicking on task title on manage task page
 
     public void clickAndFetchDataOfTask() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> clientValue = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[3]")));
 
         for (WebElement element : clientValue) {
@@ -285,6 +288,28 @@ public class TaskPage {
 
         }
 
+    }
+
+    //To check add task page displays with all details  by clicking on add task button on manage task page
+
+    public String verifyAddTaskPageOpen(){
+        return  driver.findElement(displayedMessage).getText();
+
+    }
+
+    //Edit task page should open in editable format by clicking on edit icon on manage edit page
+
+    public void clickOnEditIcon(){
+        driver.findElement(editIconOnManageTaskPage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String verifyEditTaskPage(){
+        return driver.findElement(displayedMessage).getText();
     }
 
 }

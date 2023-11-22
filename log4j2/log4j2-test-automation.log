@@ -1,5 +1,776 @@
-[INFO ] 2023-05-04 08:53:58.366 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-04 08:54:17.179 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-04 08:54:18.190 [main] Log - User Enters Username And Password
-[INFO ] 2023-05-04 08:54:27.460 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
-[INFO ] 2023-05-04 08:54:30.495 [main] Log - User verify (en-GB) text on right top corner of dash board page 
+[INFO ] 2023-11-21 09:48:34.865 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 09:48:54.368 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 09:48:55.656 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 09:49:09.992 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 09:49:11.057 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 09:49:11.125 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 09:49:11.185 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 09:49:12.275 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 09:49:16.433 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 09:49:18.002 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 09:49:20.155 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 09:49:22.288 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 09:49:23.351 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 09:49:25.647 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 09:49:27.780 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 09:49:30.897 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 09:49:31.973 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 09:49:34.068 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 09:49:42.592 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 09:49:45.108 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 09:49:46.136 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 09:49:49.217 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 09:49:50.329 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 09:50:01.049 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 09:55:31.176 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:05:34.956 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:05:57.299 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 10:05:58.566 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 10:06:12.897 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:06:13.965 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:06:14.038 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:06:14.100 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:06:15.188 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:06:19.347 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:06:20.906 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:06:23.061 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:06:25.139 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 10:06:26.208 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 10:06:28.286 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 10:06:29.431 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 10:06:31.752 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 10:06:34.070 [main] Log - Dog breeds subcategory is==Affenpinscher
+[INFO ] 2023-11-21 10:06:36.196 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 10:06:45.496 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 10:06:47.668 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 10:06:48.735 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 10:06:49.861 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 10:06:51.015 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 10:06:52.060 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 10:06:54.126 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 10:06:55.251 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 10:06:56.371 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 10:07:01.550 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:11:07.002 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:11:29.423 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 10:11:30.698 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 10:11:45.029 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:11:46.107 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:11:46.180 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:11:46.245 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:11:47.318 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:13:03.406 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:13:24.772 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 10:13:26.048 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 10:13:40.363 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:13:41.442 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:13:41.506 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:13:41.574 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:13:42.651 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:13:46.810 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:13:48.381 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:13:50.542 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:13:52.626 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 10:13:53.697 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 10:13:55.771 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 10:13:56.907 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 10:13:59.242 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 10:14:01.565 [main] Log - Dog breeds subcategory is==Affenpinscher
+[INFO ] 2023-11-21 10:14:03.716 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 10:14:12.813 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 10:14:14.974 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 10:14:16.044 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 10:14:17.160 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 10:14:18.338 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 10:14:19.390 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 10:14:22.459 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 10:14:23.568 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 10:14:34.257 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 10:21:38.264 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:21:57.227 [main] Log - ********** Generate Quote For Cat Test Case Starts Here ************
+[INFO ] 2023-11-21 10:21:58.501 [main] Log - Selected Breed Is ==Cat
+[INFO ] 2023-11-21 10:22:12.832 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:22:13.902 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:22:13.969 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:22:14.029 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:22:15.104 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:22:19.267 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:22:20.823 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:22:22.981 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:22:25.123 [main] Log - Whether Agent is selected for Cat Breed is or not== No
+[INFO ] 2023-11-21 10:22:27.298 [main] Log - Cat Breed is==Abyssinian Cross
+[INFO ] 2023-11-21 10:22:29.433 [main] Log - Cat Gender is== Male
+[INFO ] 2023-11-21 10:22:32.512 [main] Log - Cat Species Name is==testCat
+[INFO ] 2023-11-21 10:22:33.580 [main] Log - Cat date of birth is==12.05.2023
+[INFO ] 2023-11-21 10:22:35.657 [main] Log - Cat purchased price is==1200
+[INFO ] 2023-11-21 10:22:43.134 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 10:22:46.303 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 10:22:47.374 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 10:22:48.468 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 10:22:49.607 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 10:22:50.652 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 10:22:52.736 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 10:22:53.857 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 10:22:54.985 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 10:24:08.043 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:24:09.990 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:37:27.789 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:37:47.406 [main] Log - ********** Generate Quote For Cat Test Case Starts Here ************
+[INFO ] 2023-11-21 10:37:48.676 [main] Log - Selected Breed Is ==Cat
+[INFO ] 2023-11-21 10:38:02.980 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:38:04.045 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:38:04.114 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:38:04.177 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:38:05.254 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:38:09.396 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:38:10.957 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:38:13.098 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:38:15.236 [main] Log - Whether Agent is selected for Cat Breed is or not== No
+[INFO ] 2023-11-21 10:38:17.427 [main] Log - Cat Breed is==Abyssinian Cross
+[INFO ] 2023-11-21 10:38:19.558 [main] Log - Cat Gender is== Male
+[INFO ] 2023-11-21 10:38:22.634 [main] Log - Cat Species Name is==testCat
+[INFO ] 2023-11-21 10:38:23.708 [main] Log - Cat date of birth is==12.05.2023
+[INFO ] 2023-11-21 10:38:25.787 [main] Log - Cat purchased price is==1200
+[INFO ] 2023-11-21 10:38:33.283 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 10:38:36.437 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 10:38:37.510 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 10:38:38.605 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 10:38:39.743 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 10:38:40.790 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 10:38:43.870 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 10:38:44.970 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 10:38:55.623 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 10:41:35.495 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:42:02.014 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:42:03.082 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:42:03.135 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:42:03.194 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:42:04.260 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:42:08.397 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:42:09.962 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:42:12.103 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:42:13.115 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 10:42:14.429 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 10:42:46.625 [main] Log - Agent Value is== No
+[INFO ] 2023-11-21 10:42:48.797 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 10:42:50.936 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 10:42:53.072 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 10:42:55.208 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 10:42:57.359 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 10:43:02.475 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 10:43:03.549 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 10:43:04.618 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 10:43:05.703 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 10:43:08.816 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 10:43:16.155 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 10:43:17.249 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 10:43:18.302 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:19.363 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:20.413 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:21.464 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:22.522 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:23.581 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:24.639 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:25.693 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:26.743 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:27.791 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:28.836 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:29.895 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:30.953 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:32.008 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:43:33.556 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:57:50.526 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 10:58:19.899 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 10:58:20.967 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 10:58:21.025 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 10:58:21.083 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 10:58:22.160 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 10:58:26.323 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 10:58:27.877 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 10:58:30.007 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 10:58:31.027 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 10:58:32.310 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 10:59:04.502 [main] Log - Agent Value is== No
+[INFO ] 2023-11-21 10:59:06.689 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 10:59:08.829 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 10:59:10.962 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 10:59:13.113 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 10:59:15.258 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 10:59:20.359 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 10:59:21.430 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 10:59:22.492 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 10:59:23.589 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 10:59:26.692 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 10:59:34.059 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 10:59:35.130 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 10:59:36.185 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:37.238 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:38.303 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:39.355 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:40.417 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:41.477 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:42.541 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:43.593 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:44.646 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:45.707 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:46.776 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:47.840 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:48.898 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:49.947 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:51.491 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 10:59:56.709 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 10:59:57.846 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 10:59:58.980 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 11:02:23.908 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 11:06:47.479 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 11:07:10.490 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 11:07:11.554 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 11:07:11.608 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 11:07:11.666 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 11:07:12.733 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 11:07:16.880 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 11:07:18.449 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 11:07:20.569 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 11:07:21.584 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 11:07:22.882 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 11:07:55.065 [main] Log - Agent Value is== No
+[INFO ] 2023-11-21 11:07:57.232 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 11:07:59.366 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 11:08:01.504 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 11:08:03.648 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 11:08:05.802 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 11:08:10.901 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 11:08:11.981 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 11:08:13.055 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 11:08:14.135 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 11:08:17.260 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 11:08:24.608 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 11:08:25.663 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 11:08:26.719 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:27.775 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:28.839 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:29.896 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:30.948 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:32.010 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:33.065 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:34.117 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:35.199 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:36.251 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:37.304 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:38.369 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:39.429 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:40.481 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:42.028 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 11:08:48.244 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 11:08:49.358 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 11:09:00.059 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 11:16:57.814 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 11:17:16.992 [main] Log - **********Generate Quote For Introductory Product Test Case Starts Here************
+[INFO ] 2023-11-21 11:17:18.275 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 11:17:32.551 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 11:17:33.660 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 11:17:33.717 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 11:17:33.775 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 11:17:34.842 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 11:17:38.997 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 11:17:40.553 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 11:17:42.681 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 11:17:51.280 [main] Log - Dog Species Name is==testDog
+[INFO ] 2023-11-21 11:17:52.345 [main] Log - Dog date of birth is==12.04.2023
+[INFO ] 2023-11-21 11:17:54.421 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 11:17:56.571 [main] Log - Pet Breed Selected is== Mixed Breed
+[INFO ] 2023-11-21 11:17:58.907 [main] Log - Dog Breed is==Affenpinscher
+[INFO ] 2023-11-21 11:18:01.035 [main] Log - Dog Gender is== Female
+[INFO ] 2023-11-21 12:07:39.719 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:30:25.240 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:31:19.115 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:31:50.736 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 12:31:52.156 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 12:32:07.438 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 12:32:09.231 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:32:09.372 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:32:09.512 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:32:10.662 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:32:14.952 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:32:16.581 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:32:18.825 [main] Log - Client heared about company from==
+[INFO ] 2023-11-21 12:32:20.994 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 12:32:22.117 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 12:32:24.254 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 12:32:25.493 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 12:32:28.048 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 12:32:30.639 [main] Log - Dog breeds subcategory is==Affenpinscher
+[INFO ] 2023-11-21 12:32:32.877 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 12:32:43.591 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 12:32:45.878 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 12:32:47.003 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 12:32:48.236 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 12:32:49.502 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 12:32:50.589 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 12:32:52.712 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 12:32:53.915 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 12:32:55.095 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 12:33:00.463 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:33:18.297 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 12:33:19.756 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 12:33:34.559 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 12:33:35.685 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:33:35.814 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:33:35.949 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:33:37.113 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:33:41.431 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:33:43.059 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:33:45.315 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 12:33:47.464 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 12:33:48.589 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 12:33:50.733 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 12:33:51.999 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 12:33:54.605 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 12:33:57.215 [main] Log - Dog breeds subcategory is==
+[INFO ] 2023-11-21 12:33:59.436 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 12:34:10.122 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 12:34:12.384 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 12:34:13.538 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 12:34:14.732 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 12:34:16.010 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 12:34:17.089 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 12:34:20.185 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 12:34:21.384 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 12:34:32.614 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 12:34:37.942 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:35:04.075 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 12:35:05.606 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 12:35:19.816 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 12:35:20.949 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:35:21.073 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:35:21.199 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:35:22.347 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:35:26.660 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:35:28.275 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:35:30.507 [main] Log - Client heared about company from==
+[INFO ] 2023-11-21 12:35:32.642 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 12:35:33.766 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 12:35:35.898 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 12:35:37.152 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 12:35:39.740 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 12:35:42.302 [main] Log - Dog breeds subcategory is==Affenpinscher
+[INFO ] 2023-11-21 12:35:44.552 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 12:35:55.957 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 12:35:58.252 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 12:35:59.384 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 12:36:00.583 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 12:36:01.843 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 12:36:02.920 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 12:36:06.014 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 12:36:07.213 [main] Log - Mode Of Payment  Option Selected By Client is==Direct Debit
+[INFO ] 2023-11-21 12:36:11.680 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 12:43:55.697 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:44:18.293 [main] Log - **********Generate Quote For Dog Test Case Starts Here************
+[INFO ] 2023-11-21 12:44:19.572 [main] Log - Selected Breed Is== Dog
+[INFO ] 2023-11-21 12:44:33.910 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 12:44:34.980 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:44:35.043 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:44:35.104 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:44:36.180 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:44:40.339 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:44:41.894 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:44:44.059 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 12:44:46.143 [main] Log - Dog Name is==testDog
+[INFO ] 2023-11-21 12:44:47.210 [main] Log - Dog Date of birth is==12.04.2023
+[INFO ] 2023-11-21 12:44:49.307 [main] Log - Dog purchased price is==1200
+[INFO ] 2023-11-21 12:44:50.452 [main] Log - Dog Breed is==Mixed Breed
+[INFO ] 2023-11-21 12:44:52.844 [main] Log - Dog breeds subcategory is==Abyssinian Sand Terrier
+[INFO ] 2023-11-21 12:44:55.153 [main] Log - Dog breeds subcategory is==Affenpinscher
+[INFO ] 2023-11-21 12:44:57.293 [main] Log - Dog Gender is==Male
+[INFO ] 2023-11-21 12:45:06.330 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 12:45:08.485 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 12:45:09.553 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 12:45:10.675 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 12:45:11.846 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 12:45:12.904 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 12:45:15.977 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 12:45:17.077 [main] Log - Mode Of Payment  Option Selected By Client is==Direct Debit
+[INFO ] 2023-11-21 12:45:21.411 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 12:47:32.835 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:50:49.353 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:51:07.885 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 12:51:09.153 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 12:51:23.463 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 12:51:24.530 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:51:24.596 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:51:24.663 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:51:25.742 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:51:29.896 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:51:31.463 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:51:33.598 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 12:51:35.757 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 12:51:36.818 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 12:51:39.116 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 12:51:41.259 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 12:51:44.362 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 12:51:45.452 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 12:51:47.528 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 12:51:56.034 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 12:51:58.521 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 12:51:59.546 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 12:52:01.629 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 12:52:44.090 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:53:06.381 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 12:53:07.669 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 12:53:21.972 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 12:53:23.057 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:53:23.142 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:53:23.207 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:53:24.296 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:53:28.440 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:53:30.016 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:53:32.148 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 12:53:34.274 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 12:53:35.344 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 12:53:37.631 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 12:53:39.771 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 12:53:42.883 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 12:53:43.958 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 12:53:46.063 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 12:53:54.610 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 12:53:57.129 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 12:53:58.155 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 12:54:00.219 [main] Log - Payment Frequency Option Selected By Client is ==
+[INFO ] 2023-11-21 12:56:21.468 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 12:56:41.370 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 12:56:42.654 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 12:56:56.958 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 12:56:58.023 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 12:56:58.086 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 12:56:58.186 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 12:56:59.267 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 12:57:03.420 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 12:57:04.988 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 12:57:07.126 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 12:57:09.271 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 12:57:10.339 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 12:57:12.646 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 12:57:14.792 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 12:57:17.894 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 12:57:18.963 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 12:57:21.052 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 12:57:29.566 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 12:57:32.078 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 12:57:33.108 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 12:57:36.182 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 12:57:37.303 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 12:57:38.447 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 13:00:09.453 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 13:00:30.695 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 13:00:31.972 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 13:00:46.277 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 13:00:47.346 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 13:00:47.413 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 13:00:47.474 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 13:00:48.560 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 13:00:52.718 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 13:00:54.288 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 13:00:56.424 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 13:00:58.560 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 13:00:59.629 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 13:01:01.940 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 13:01:04.054 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 13:01:07.169 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 13:01:08.257 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 13:01:10.379 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 13:01:18.948 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 13:01:21.458 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 13:01:22.485 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 13:01:25.567 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 13:01:26.680 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 13:01:37.361 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 13:03:04.756 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 13:03:26.599 [main] Log - **********Generate Quote For Exotic Test Case Starts Here************
+[INFO ] 2023-11-21 13:03:27.877 [main] Log - Selected Breed Is==Exotic
+[INFO ] 2023-11-21 13:03:42.166 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 13:03:43.228 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 13:03:43.299 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 13:03:43.357 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 13:03:44.462 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 13:03:48.610 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 13:03:50.177 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 13:03:52.326 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 13:03:54.458 [main] Log - Whether Agent is selected for Exotic Breed is or not==No
+[INFO ] 2023-11-21 13:03:55.521 [main] Log - Brand Of exotic is==
+[INFO ] 2023-11-21 13:03:57.816 [main] Log - Exotic Breed is==Abyssinian Guinea Pig
+[INFO ] 2023-11-21 13:03:59.937 [main] Log - Exotic Gender is==Male
+[INFO ] 2023-11-21 13:04:03.054 [main] Log - Exotic Species Name is==testExotic
+[INFO ] 2023-11-21 13:04:04.130 [main] Log - Exotic date of birth is==12.05.2022
+[INFO ] 2023-11-21 13:04:06.226 [main] Log - Exotic purchased price is==1200
+[INFO ] 2023-11-21 13:04:14.824 [main] Log - Cover Start Date is== 01.01.2023
+[INFO ] 2023-11-21 13:04:17.334 [main] Log - Client has clicked radio button of assumption 
+[INFO ] 2023-11-21 13:04:18.360 [main] Log - Client has checked terms and condition check box
+[INFO ] 2023-11-21 13:04:21.434 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 13:04:22.540 [main] Log - Mode Of Payment  Option Selected By Client is==Direct Debit
+[INFO ] 2023-11-21 13:04:26.867 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 13:58:40.369 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:02:56.258 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:03:49.460 [main] Log - ********** Generate Quote For Cat Test Case Starts Here ************
+[INFO ] 2023-11-21 14:03:50.767 [main] Log - Selected Breed Is ==Cat
+[INFO ] 2023-11-21 14:04:05.085 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 14:04:06.168 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:04:06.232 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:04:06.294 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:04:07.381 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:04:11.528 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:04:13.091 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:04:15.227 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:04:17.365 [main] Log - Whether Agent is selected for Cat Breed is or not== No
+[INFO ] 2023-11-21 14:04:19.557 [main] Log - Cat Breed is==Abyssinian Cross
+[INFO ] 2023-11-21 14:04:21.693 [main] Log - Cat Gender is== Male
+[INFO ] 2023-11-21 14:04:24.771 [main] Log - Cat Species Name is==testCat
+[INFO ] 2023-11-21 14:04:25.840 [main] Log - Cat date of birth is==12.05.2023
+[INFO ] 2023-11-21 14:04:27.917 [main] Log - Cat purchased price is==1200
+[INFO ] 2023-11-21 14:04:35.563 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 14:04:38.713 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 14:04:39.786 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 14:04:40.874 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 14:04:42.013 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 14:04:43.059 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 14:04:46.124 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:04:47.211 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 14:04:48.320 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 14:04:53.569 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:05:11.217 [main] Log - ********** Generate Quote For Cat Test Case Starts Here ************
+[INFO ] 2023-11-21 14:05:12.476 [main] Log - Selected Breed Is ==Cat
+[INFO ] 2023-11-21 14:05:26.613 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 14:05:27.678 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:05:27.741 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:05:27.799 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:05:28.874 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:05:33.026 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:05:34.589 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:05:36.728 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:05:38.878 [main] Log - Whether Agent is selected for Cat Breed is or not== No
+[INFO ] 2023-11-21 14:05:41.073 [main] Log - Cat Breed is==Abyssinian Cross
+[INFO ] 2023-11-21 14:05:43.203 [main] Log - Cat Gender is== Male
+[INFO ] 2023-11-21 14:05:46.271 [main] Log - Cat Species Name is==testCat
+[INFO ] 2023-11-21 14:05:47.360 [main] Log - Cat date of birth is==12.05.2023
+[INFO ] 2023-11-21 14:05:49.438 [main] Log - Cat purchased price is==1200
+[INFO ] 2023-11-21 14:05:56.883 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 14:06:00.044 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 14:06:01.112 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 14:06:02.209 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 14:06:03.353 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 14:06:04.402 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 14:06:07.470 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:06:08.577 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 14:06:19.226 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 14:06:24.405 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:06:43.424 [main] Log - ********** Generate Quote For Cat Test Case Starts Here ************
+[INFO ] 2023-11-21 14:06:44.694 [main] Log - Selected Breed Is ==Cat
+[INFO ] 2023-11-21 14:06:58.824 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 14:06:59.897 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:06:59.957 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:07:00.019 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:07:01.100 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:07:05.246 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:07:06.814 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:07:08.948 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:07:11.071 [main] Log - Whether Agent is selected for Cat Breed is or not== No
+[INFO ] 2023-11-21 14:07:13.253 [main] Log - Cat Breed is==Abyssinian Cross
+[INFO ] 2023-11-21 14:07:15.368 [main] Log - Cat Gender is== Male
+[INFO ] 2023-11-21 14:07:18.437 [main] Log - Cat Species Name is==testCat
+[INFO ] 2023-11-21 14:07:19.510 [main] Log - Cat date of birth is==12.05.2023
+[INFO ] 2023-11-21 14:07:21.580 [main] Log - Cat purchased price is==1200
+[INFO ] 2023-11-21 14:07:28.930 [main] Log - Plan Selected By Client Is==Superior (Lifetime)
+[INFO ] 2023-11-21 14:07:32.086 [main] Log - Cover Start Date is==12.11.2023
+[INFO ] 2023-11-21 14:07:33.144 [main] Log - Microchip Number Of Pet is ABC123
+[INFO ] 2023-11-21 14:07:34.229 [main] Log - Client has clicked radio button 1
+[INFO ] 2023-11-21 14:07:35.372 [main] Log - Client has clicked radio button 2
+[INFO ] 2023-11-21 14:07:36.421 [main] Log - Client has clicked radio button 3
+[INFO ] 2023-11-21 14:07:39.500 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:07:40.598 [main] Log - Mode Of Payment  Option Selected By Client is==Direct Debit
+[INFO ] 2023-11-21 14:07:44.879 [main] Log - Client Has clicked on generate Policy button==Create Policy
+[INFO ] 2023-11-21 14:09:46.308 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:16:19.352 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:16:42.006 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 14:16:43.146 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:16:43.267 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:16:43.388 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:16:44.539 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:16:48.866 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:16:50.471 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:16:52.693 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:16:53.718 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:16:55.213 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 14:17:27.515 [main] Log - Agent Value is== 
+[INFO ] 2023-11-21 14:17:29.809 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 14:17:32.031 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 14:17:34.267 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 14:17:36.521 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 14:17:38.767 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 14:17:43.924 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 14:17:45.050 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 14:17:46.156 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 14:17:47.293 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 14:17:50.448 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 14:17:58.069 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 14:17:59.196 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 14:18:01.914 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:18:28.010 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 14:18:29.118 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:18:29.229 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:18:29.350 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:18:30.499 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:18:34.752 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:18:36.361 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:18:38.569 [main] Log - Client heared about company from==
+[INFO ] 2023-11-21 14:18:39.597 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:18:41.208 [main] Log - Selected Breed Is==
+[INFO ] 2023-11-21 14:19:13.517 [main] Log - Agent Value is== 
+[INFO ] 2023-11-21 14:19:15.796 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 14:19:18.021 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 14:19:20.256 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 14:19:22.509 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 14:19:24.752 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 14:19:29.906 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 14:19:31.031 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 14:19:32.131 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 14:19:33.265 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 14:19:36.402 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 14:19:43.997 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 14:19:45.095 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 14:19:47.650 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:29:32.751 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:29:59.745 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 14:30:00.886 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:30:01.042 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:30:01.200 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:30:02.359 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:30:06.654 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:30:08.264 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:30:10.474 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:30:11.493 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:30:12.984 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 14:30:45.311 [main] Log - Agent Value is== 
+[INFO ] 2023-11-21 14:30:47.619 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 14:30:49.854 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 14:30:52.091 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 14:30:54.324 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 14:30:56.575 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 14:31:01.732 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 14:31:02.848 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 14:31:03.945 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 14:31:05.106 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 14:31:08.254 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 14:31:16.928 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 14:31:18.029 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 14:31:19.105 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:20.200 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:21.282 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:22.367 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:23.458 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:24.548 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:25.625 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:26.708 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:27.798 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:28.908 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:29.995 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:31.084 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:32.167 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:33.249 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:34.818 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:31:41.136 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:31:42.310 [main] Log - Mode Of Payment  Option Selected By Client is==Other
+[INFO ] 2023-11-21 14:31:43.548 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 14:31:48.901 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:32:12.849 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 14:32:13.991 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:32:14.103 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:32:14.215 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:32:15.352 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:32:19.607 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:32:21.239 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:32:23.453 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:32:24.477 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:32:25.815 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 14:32:58.139 [main] Log - Agent Value is== 
+[INFO ] 2023-11-21 14:33:00.433 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 14:33:02.653 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 14:33:04.892 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 14:33:07.136 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 14:33:09.374 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 14:33:14.553 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 14:33:15.666 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 14:33:16.755 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 14:33:17.885 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 14:33:21.038 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 14:33:29.708 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 14:33:30.816 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 14:33:31.896 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:32.984 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:34.070 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:35.160 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:36.241 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:37.330 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:38.411 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:39.500 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:40.590 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:41.683 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:42.794 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:43.873 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:44.966 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:46.041 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:47.628 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:33:53.927 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:33:55.102 [main] Log - Mode Of Payment  Option Selected By Client is==Credit/Debit Card
+[INFO ] 2023-11-21 14:34:06.242 [main] Log - Client Has clicked on generate Policy button==  Create Policy
+[INFO ] 2023-11-21 14:34:11.618 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:34:36.706 [main] Log - Client Title is== Mr
+[INFO ] 2023-11-21 14:34:37.833 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:34:37.947 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:34:38.059 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:34:39.185 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:34:43.500 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:34:45.113 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:34:47.313 [main] Log - Client heared about company from==Blog
+[INFO ] 2023-11-21 14:34:48.329 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:34:49.880 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 14:36:14.637 [main] Log - Name Of Browser Is chrome
+[INFO ] 2023-11-21 14:36:44.511 [main] Log - Client Title is== 
+[INFO ] 2023-11-21 14:36:45.639 [main] Log - Client FirstName is==testUserFirstName
+[INFO ] 2023-11-21 14:36:45.749 [main] Log - Client LastName is==testUserLastName
+[INFO ] 2023-11-21 14:36:45.866 [main] Log - Client Date Of Birth Is==12.03.1998
+[INFO ] 2023-11-21 14:36:47.032 [main] Log - Client Email Id Is==nitesh.barot@prowersenewtest.com
+[INFO ] 2023-11-21 14:36:51.305 [main] Log - Client PostCode Is==RM8 2TE4 Lake Close, Dagenham
+[INFO ] 2023-11-21 14:36:52.918 [main] Log - Client Primary Contact Number Is==9696969696
+[INFO ] 2023-11-21 14:36:55.182 [main] Log - Client heared about company from==
+[INFO ] 2023-11-21 14:36:56.209 [main] Log - **********Generate Quote For Horse Product Test Case Starts Here************
+[INFO ] 2023-11-21 14:36:57.779 [main] Log - Selected Breed Is==Horse
+[INFO ] 2023-11-21 14:37:30.085 [main] Log - Agent Value is== 
+[INFO ] 2023-11-21 14:37:32.391 [main] Log - Horse Breed is== American Miniature X
+[INFO ] 2023-11-21 14:37:34.616 [main] Log - Horse Gender is== Filly
+[INFO ] 2023-11-21 14:37:36.845 [main] Log - Horse Color is== Blanket with Spots
+[INFO ] 2023-11-21 14:37:39.088 [main] Log - Horse Purchase Type is== Homebred
+[INFO ] 2023-11-21 14:37:41.321 [main] Log - Horse Activity is== Foals & Young Horses (30 days old to 1 year old)
+[INFO ] 2023-11-21 14:37:46.489 [main] Log - Horse Species Name is==testExotic
+[INFO ] 2023-11-21 14:37:47.623 [main] Log - Horse date of birth is==12.08.2020
+[INFO ] 2023-11-21 14:37:48.724 [main] Log - Horse height is==130
+[INFO ] 2023-11-21 14:37:49.853 [main] Log - Horse stud fees is==1500
+[INFO ] 2023-11-21 14:37:53.010 [main] Log - Horse Market Values is==1200
+[INFO ] 2023-11-21 14:38:01.713 [main] Log - Policy Start Date is==25.10.2023
+[INFO ] 2023-11-21 14:38:02.821 [main] Log - Microchip Number Of Horse is==A123
+[INFO ] 2023-11-21 14:38:03.912 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:04.996 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:06.083 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:07.167 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:08.251 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:09.340 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:10.438 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:11.526 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:12.616 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:13.707 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:14.798 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:15.892 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:16.970 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:18.039 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:19.611 [main] Log - Client Has clicked on disclosure
+[INFO ] 2023-11-21 14:38:25.884 [main] Log - Payment Frequency Option Selected By Client is==
+[INFO ] 2023-11-21 14:38:27.066 [main] Log - Mode Of Payment  Option Selected By Client is==Direct Debit
+[INFO ] 2023-11-21 14:38:31.605 [main] Log - Client Has clicked on generate Policy button==  Create Policy

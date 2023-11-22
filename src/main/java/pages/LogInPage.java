@@ -1,15 +1,25 @@
 package pages;
 
+
+import actions.LoginActions;
+import dataModels.LogIn;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LogInPage {
+
+
+public class LogInPage extends LoginActions  {
     private WebDriver driver;
 
     //1.Create a class constructor
     public LogInPage(WebDriver driver) {
         this.driver = driver;
     }
+
+
+    LogIn login;
+
+
 
     //Login Form Elements
     private By emailField = By.xpath("//input[@id='UserName']");
@@ -27,20 +37,26 @@ public class LogInPage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
         return driver.getCurrentUrl();
 
     }
 
-    public void enterUserName(String userN) {
-        driver.findElement(emailField).sendKeys(userN);
+    public void logInDetails(String datasetFile) throws Exception {
+        login= getAccountDetails(datasetFile);
+        setEmail(login.getUsername());
+        setPassword(login.getPassword());
 
     }
 
-    public void enterPassword(String Password) {
-        driver.findElement(passwordField).sendKeys(Password);
-
+    public void setEmail(String email) {
+        driver.findElement(emailField).sendKeys(email);
     }
+
+    public void setPassword(String pass) {
+        driver.findElement(passwordField).sendKeys(pass);
+    }
+
+
 
     public void clickSubmit() {
         driver.findElement(accountLoginButton).click();
