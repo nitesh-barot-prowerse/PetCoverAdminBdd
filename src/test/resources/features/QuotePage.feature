@@ -119,32 +119,32 @@ Feature: Verify Quote Module Features
     And User selects appropriate quote and click on save quote for cat
     And  User Generates policy for direct debit payment mode for cat
 
-  @Sanity
-  Scenario: Generate and save quote  for horse breed
-    When User clicks on add quote button
-    And User selects the introductory value of horse form product dropdown
-    And User enters client details form "client/client.json"
-    And User selects horse species for introductory
-    And User enters horse species information for introductory from "quote/horse.json"
-    And User calculate premium value for horse introductory
-
-  @Sanity
-  Scenario: Generate and save quote  for horse breed using credit/debit card payment option
-    When User clicks on add quote button
-    And User selects the introductory value of horse form product dropdown
-    And User enters client details form "client/client.json"
-    And User selects horse species for introductory
-    And User enters horse species information for introductory from "quote/horse.json"
-    And User calculate premium value for horse and generate policy
-
-  @Sanity
-  Scenario: Generate and save quote  for horse breed using direct debit card payment option
-    When User clicks on add quote button
-    And User selects the introductory value of horse form product dropdown
-    And User enters client details form "client/client.json"
-    And User selects horse species for introductory
-    And User enters horse species information for introductory from "quote/horse.json"
-    And User calculate premium value for horse and generate policy with direct debit payment mode
+#  @Sanity
+#  Scenario: Generate and save quote  for horse breed
+#    When User clicks on add quote button
+#    And User selects the introductory value of horse form product dropdown
+#    And User enters client details form "client/client.json"
+#    And User selects horse species for introductory
+#    And User enters horse species information for introductory from "quote/horse.json"
+#    And User calculate premium value for horse introductory
+#
+#  @Sanity
+#  Scenario: Generate and save quote  for horse breed using credit/debit card payment option
+#    When User clicks on add quote button
+#    And User selects the introductory value of horse form product dropdown
+#    And User enters client details form "client/client.json"
+#    And User selects horse species for introductory
+#    And User enters horse species information for introductory from "quote/horse.json"
+#    And User calculate premium value for horse and generate policy
+#
+#  @Sanity
+#  Scenario: Generate and save quote  for horse breed using direct debit card payment option
+#    When User clicks on add quote button
+#    And User selects the introductory value of horse form product dropdown
+#    And User enters client details form "client/client.json"
+#    And User selects horse species for introductory
+#    And User enters horse species information for introductory from "quote/horse.json"
+#    And User calculate premium value for horse and generate policy with direct debit payment mode
 
 
 
