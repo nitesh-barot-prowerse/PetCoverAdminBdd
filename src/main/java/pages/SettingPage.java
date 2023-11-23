@@ -219,7 +219,7 @@ public class SettingPage {
 
     private By displayedMessageOneAddPetBreedPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
 
-    private By editIconOnManagePetBreedPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[6]/div/a[1]");
+    private By editIconOnManagePetBreedPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[9]/div/a[1]");
 
     private By inputTypPetBreedName = By.cssSelector("input[id='PetBreedName']");
 
