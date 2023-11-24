@@ -5,119 +5,119 @@ Feature: Verify Quote Module Features
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on quote icon on left tool bar
 
-#  @Sanity
-#  Scenario: Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.
-#    Then Manage quote page displays with list of quote
-#
-#  @Sanity
-#  Scenario:To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format
-#    Then User will able to see all data under quote date and expire date column displays with dd-mm-yyyy format
-#
-#
-#  Scenario: One can redirect to add quote page by clicking add quote button on top right corner of manage quote
-#    When User clicks add quote button on manage quote page
-#    Then User will able to see add quote page with data
-#
-#  @Sanity
-#  Scenario:Data under total and monthly premium column should prefixed by £ sign
-#    Then User will able to see  all data under total and monthly premium colum prefixed by £ sign
+  @Sanity
+  Scenario: Manage Quote page displays with list of quotes by clicking on quote icon on left tool bar.
+    Then Manage quote page displays with list of quote
+
+  @Sanity
+  Scenario:To verify dates under Quote date and Expire date columns displays in dd-mm-yyyy format
+    Then User will able to see all data under quote date and expire date column displays with dd-mm-yyyy format
 
 
-#  @Sanity
-#  Scenario:On the Add Quote page, verify that the Product dropdown appears with list of products
-#    When User clicks on add quote button
-#    Then On add quote page product dropdown will appear with desired list
+  Scenario: One can redirect to add quote page by clicking add quote button on top right corner of manage quote
+    When User clicks add quote button on manage quote page
+    Then User will able to see add quote page with data
 
-#  @Sanity
-#  Scenario: Verify Generate and save quote feature for Dog
-#    When User clicks on add quote button
-#    And User selects the species value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters dog species information from "quote/dog.json"
-#    And User calculate premium value
-#    And User selects appropriate quote and click on save quote
-#    And  User Generates policy
-#
-#  @Sanity
-#  Scenario: Verify Generate and save quote feature for Dog for credit/debit card payment mode
-#    When User clicks on add quote button
-#    And User selects the species value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters dog species information from "quote/dog.json"
-#    And User calculate premium value
-#    And User selects appropriate quote and click on save quote
-#    And User Generates policy for credit and debit card payment mode for dog
-
-#    @Sanity
-#  Scenario: Verify Generate and save quote feature for Dog with direct debit payment mode
-#    When User clicks on add quote button
-#    And User selects the species value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters dog species information from "quote/dog.json"
-#    And User calculate premium value
-#    And User selects appropriate quote and click on save quote
-#    And User Generates policy for direct debit payment mode for dog
+  @Sanity
+  Scenario:Data under total and monthly premium column should prefixed by £ sign
+    Then User will able to see  all data under total and monthly premium colum prefixed by £ sign
 
 
-#  @Sanity
-#  Scenario: Verify Generate and save quote feature for Exotic
-#    When User clicks on add quote button
-#    And User selects the exotic value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters exotic species information from "quote/exotic.json"
-#    And User calculate premium value for exotic
-#    And User enters all required information and click on save quote
-#    And  User Generates policy for exotic
+  @Sanity
+  Scenario:On the Add Quote page, verify that the Product dropdown appears with list of products
+    When User clicks on add quote button
+    Then On add quote page product dropdown will appear with desired list
 
-#    @Sanity
-#  Scenario: Verify Generate and save quote feature for Exotic for credit/debit card payment mode
-#    When User clicks on add quote button
-#    And User selects the exotic value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters exotic species information from "quote/exotic.json"
-#    And User calculate premium value for exotic
-#    And User enters all required information and click on save quote
-#    And  User Generates policy for credit and debit card payment mode for exotic
-#
-#  @Sanity
-#  Scenario: Verify Generate and save quote feature for Exotic with direct debit card payment mode
-#    When User clicks on add quote button
-#    And User selects the exotic value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters exotic species information from "quote/exotic.json"
-#    And User calculate premium value for exotic
-#    And User enters all required information and click on save quote
-#    And  User Generates policy for direct debit payment mode for exotic
-#
-#  @Sanity
-#  Scenario: Generate and save quote feature for Cat
-#    When User clicks on add quote button
-#    And User selects the cat value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters cat species information from "quote/cat.json"
-#    And User calculate premium value for cat
-#    And User selects appropriate quote and click on save quote for cat
-#    And  User Generates policy for cat
-#
-#  @Sanity
-#  Scenario: Generate and save quote feature for Cat using credit and debit card payment option
-#    When User clicks on add quote button
-#    And User selects the cat value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters cat species information from "quote/cat.json"
-#    And User calculate premium value for cat
-#    And User selects appropriate quote and click on save quote for cat
-#    And  User Generates policy for credit and debit card payment mode for cat
-#
-#    @Sanity
-#  Scenario: Generate and save quote feature for Cat using credit and debit card payment option
-#    When User clicks on add quote button
-#    And User selects the cat value form product dropdown
-#    And User enters client details form "client/client.json"
-#    And User enters cat species information from "quote/cat.json"
-#    And User calculate premium value for cat
-#    And User selects appropriate quote and click on save quote for cat
-#    And  User Generates policy for direct debit payment mode for cat
+  @Sanity
+  Scenario: Verify Generate and save quote feature for Dog
+    When User clicks on add quote button
+    And User selects the species value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters dog species information from "quote/dog.json"
+    And User calculate premium value
+    And User selects appropriate quote and click on save quote
+    And  User Generates policy
+
+  @Sanity
+  Scenario: Verify Generate and save quote feature for Dog for credit/debit card payment mode
+    When User clicks on add quote button
+    And User selects the species value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters dog species information from "quote/dog.json"
+    And User calculate premium value
+    And User selects appropriate quote and click on save quote
+    And User Generates policy for credit and debit card payment mode for dog
+
+    @Sanity
+  Scenario: Verify Generate and save quote feature for Dog with direct debit payment mode
+    When User clicks on add quote button
+    And User selects the species value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters dog species information from "quote/dog.json"
+    And User calculate premium value
+    And User selects appropriate quote and click on save quote
+    And User Generates policy for direct debit payment mode for dog
+
+
+  @Sanity
+  Scenario: Verify Generate and save quote feature for Exotic
+    When User clicks on add quote button
+    And User selects the exotic value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters exotic species information from "quote/exotic.json"
+    And User calculate premium value for exotic
+    And User enters all required information and click on save quote
+    And  User Generates policy for exotic
+
+    @Sanity
+  Scenario: Verify Generate and save quote feature for Exotic for credit/debit card payment mode
+    When User clicks on add quote button
+    And User selects the exotic value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters exotic species information from "quote/exotic.json"
+    And User calculate premium value for exotic
+    And User enters all required information and click on save quote
+    And  User Generates policy for credit and debit card payment mode for exotic
+
+  @Sanity
+  Scenario: Verify Generate and save quote feature for Exotic with direct debit card payment mode
+    When User clicks on add quote button
+    And User selects the exotic value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters exotic species information from "quote/exotic.json"
+    And User calculate premium value for exotic
+    And User enters all required information and click on save quote
+    And  User Generates policy for direct debit payment mode for exotic
+
+  @Sanity
+  Scenario: Generate and save quote feature for Cat
+    When User clicks on add quote button
+    And User selects the cat value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters cat species information from "quote/cat.json"
+    And User calculate premium value for cat
+    And User selects appropriate quote and click on save quote for cat
+    And  User Generates policy for cat
+
+  @Sanity
+  Scenario: Generate and save quote feature for Cat using credit and debit card payment option
+    When User clicks on add quote button
+    And User selects the cat value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters cat species information from "quote/cat.json"
+    And User calculate premium value for cat
+    And User selects appropriate quote and click on save quote for cat
+    And  User Generates policy for credit and debit card payment mode for cat
+
+    @Sanity
+  Scenario: Generate and save quote feature for Cat using credit and debit card payment option
+    When User clicks on add quote button
+    And User selects the cat value form product dropdown
+    And User enters client details form "client/client.json"
+    And User enters cat species information from "quote/cat.json"
+    And User calculate premium value for cat
+    And User selects appropriate quote and click on save quote for cat
+    And  User Generates policy for direct debit payment mode for cat
 
 #  @Sanity
 #  Scenario: Generate and save quote  for horse breed
@@ -136,15 +136,15 @@ Feature: Verify Quote Module Features
 #    And User selects horse species for introductory
 #    And User enters horse species information for introductory from "quote/horse.json"
 #    And User calculate premium value for horse and generate policy
-
-  @Sanity
-  Scenario: Generate and save quote  for horse breed using direct debit card payment option
-    When User clicks on add quote button
-    And User selects the introductory value of horse form product dropdown
-    And User enters client details form "client/client.json"
-    And User selects horse species for introductory
-    And User enters horse species information for introductory from "quote/horse.json"
-    And User calculate premium value for horse and generate policy with direct debit payment mode
+#
+#  @Sanity
+#  Scenario: Generate and save quote  for horse breed using direct debit card payment option
+#    When User clicks on add quote button
+#    And User selects the introductory value of horse form product dropdown
+#    And User enters client details form "client/client.json"
+#    And User selects horse species for introductory
+#    And User enters horse species information for introductory from "quote/horse.json"
+#    And User calculate premium value for horse and generate policy with direct debit payment mode
 
 
 
@@ -183,16 +183,16 @@ Feature: Verify Quote Module Features
 #    And  User Generates policy for exotic introductory
 
 
-#  @Sanity
-#  Scenario: Respected quote information page will be displayed upon clicking quote number on manage quote page
-#    When User clicks on quote number on manage quote page
-#    Then Quote Information page displays with details
-#
-#  @Sanity
-#  Scenario: Items on manage quote page displays upon option selects from quote status dropdown
-#    When User selects appropriate option from quote status dropdown
-#    Then Respected data will be displayed on Manage quote page
-#
+  @Sanity
+  Scenario: Respected quote information page will be displayed upon clicking quote number on manage quote page
+    When User clicks on quote number on manage quote page
+    Then Quote Information page displays with details
+
+  @Sanity
+  Scenario: Items on manage quote page displays upon option selects from quote status dropdown
+    When User selects appropriate option from quote status dropdown
+    Then Respected data will be displayed on Manage quote page
+
 #  @Sanity
 #  Scenario: Fetch list of quote based on product option from product dropdown on manage quote page
 #    When User selects appropriate option from product dropdown on manage quote page

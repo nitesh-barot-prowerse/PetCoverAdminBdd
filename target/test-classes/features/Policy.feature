@@ -4,30 +4,30 @@ Feature: Verify Policy Module Features
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on policy icon on left tool bar
 
-#  @Sanity
-#  Scenario: List of policies should display by clicking on policy icon on left tool bar
-#    Then User can see "Manage Policy" message with all policy data
-#
-#  @Sanity
-#  Scenario: Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page
-#    Then All data under Start date and And date displays in dd-mm-yyyy format
-#
-#  @Sanity
-#  Scenario: Respected policy information should displays by clicking on individual policy number on manage policy page
-#    When User clicks on policy number
-#    Then User will redirect to policy information page
-#
-#  @Sanity
-#  Scenario:Verify that the user can download the client's policy letter
-#    When User clicks on policy number link
-#    And User clicks on letter tab on policy information page
-#    And User clicks on download icon
-#    Then User will able to see downloaded policy page
-#
-#  @Sanity
-#  Scenario:Appropriate policy data should display upon selecting an option from the status drop down on managing policy page
-#    When User selects any options from status dropdown
-#    Then Appropriate data displays on manage policy page depend on drop down option
+  @Sanity
+  Scenario: List of policies should display by clicking on policy icon on left tool bar
+    Then User can see "Manage Policy" message with all policy data
+
+  @Sanity
+  Scenario: Verify dates under start date and end date should display with dd-mm-yyyy format on manage policy page
+    Then All data under Start date and And date displays in dd-mm-yyyy format
+
+  @Sanity
+  Scenario: Respected policy information should displays by clicking on individual policy number on manage policy page
+    When User clicks on policy number
+    Then User will redirect to policy information page
+
+  @Sanity
+  Scenario:Verify that the user can download the client's policy letter
+    When User clicks on policy number link
+    And User clicks on letter tab on policy information page
+    And User clicks on download icon
+    Then User will able to see downloaded policy page
+
+  @Sanity
+  Scenario:Appropriate policy data should display upon selecting an option from the status drop down on managing policy page
+    When User selects any options from status dropdown
+    Then Appropriate data displays on manage policy page depend on drop down option
 
 #  @Sanity
 #  Scenario:Filter policy details on manage policy page upon from and to date value of policy  on manage policy page
@@ -51,11 +51,11 @@ Feature: Verify Policy Module Features
 #    And User enter all details to generate letter for client and selects send email and letter option
 #    Then Generated letter should displays under letter tab on policy information page
 
-  @Sanity
-  Scenario:Verify that add latter page should open with all details by clicking on add latter icon of cog drop down against policy number on manage policy page for insurer
-    When User clicks on add latter window icon of cog drop down against policy number on manage policy page
-    And User enter all details for insurer to generate letter for client and selects send email and letter option
-    Then Generated letter should displays under letter tab on policy information page
+#  @Sanity
+#  Scenario:Verify that add latter page should open with all details by clicking on add latter icon of cog drop down against policy number on manage policy page for insurer
+#    When User clicks on add latter window icon of cog drop down against policy number on manage policy page
+#    And User enter all details for insurer to generate letter for client and selects send email and letter option
+#    Then Generated letter should displays under letter tab on policy information page
 
 #
 #  @Sanity

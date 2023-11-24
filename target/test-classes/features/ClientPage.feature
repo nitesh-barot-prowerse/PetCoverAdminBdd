@@ -5,9 +5,9 @@ Feature:  Verify Client Module Features
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on client icon on left tool bar
 
-#  @Sanity
-#  Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
-#    Then Manage client page displays with list of clients
+  @Sanity
+  Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
+    Then Manage client page displays with list of clients
 
   Scenario Outline: Enter new client
     When User clicks on add client icon on dashbord
@@ -33,18 +33,18 @@ Feature:  Verify Client Module Features
 #    And User clicks on create button on add client page
 #    Then View client page appears with the details of currently added client
 
-#  @Sanity
-#  Scenario: Filter list of client based on active status dropdown option on manage client page also verifies client status on view client page
-#    When User selects appropriate option from Active dropdown on manage client page
-#    And User clicks on search button
-#    And User clicks on client code on manage client page
-#    Then Client status displays on view client page
-#
-#  @Sanity
-#  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
-#    When User clicks on client code on manage client page to add quote
-#    And User clicks on add button on view client page
-#    Then Add quote page displays with same client code
+  @Sanity
+  Scenario: Filter list of client based on active status dropdown option on manage client page also verifies client status on view client page
+    When User selects appropriate option from Active dropdown on manage client page
+    And User clicks on search button
+    And User clicks on client code on manage client page
+    Then Client status displays on view client page
+
+  @Sanity
+  Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
+    When User clicks on client code on manage client page to add quote
+    And User clicks on add button on view client page
+    Then Add quote page displays with same client code
 
 
 #  Scenario: view client page should displays with all details for each client code link on manage client page

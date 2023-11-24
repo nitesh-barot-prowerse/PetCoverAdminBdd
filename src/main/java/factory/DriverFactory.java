@@ -66,8 +66,13 @@ public class DriverFactory {
     }
 
     private void getChromeDriver() {
-        WebDriver driver1 = new ChromeDriver();
+         ChromeOptions options = new ChromeOptions();
+         options.addArguments("--headless", "--window-size=1920,1200");
+
+        WebDriver driver1=new ChromeDriver(options);
         tlLocal.set(driver1);
+        //WebDriver driver1 = new ChromeDriver();
+       // tlLocal.set(driver1);
     }
 
     private void getChromeHeadlessDriver() {

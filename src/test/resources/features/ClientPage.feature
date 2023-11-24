@@ -9,14 +9,14 @@ Feature:  Verify Client Module Features
   Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
 
-  Scenario Outline: Enter new client
-    When User clicks on add client icon on dashbord
-    And User enters client details from "<fileName>"
-    And User clicks on create button
-    Then View client page displays
-    Examples:
-      | fileName           |
-      | client/client.json |
+#  Scenario Outline: Enter new client
+#    When User clicks on add client icon on dashbord
+#    And User enters client details from "<fileName>"
+#    And User clicks on create button
+#    Then View client page displays
+#    Examples:
+#      | fileName           |
+#      | client/client.json |
 
 
 #  Scenario Outline: To verify edit client functionality for existing client

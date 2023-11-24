@@ -16,6 +16,7 @@ Feature: Verify Account Module Functionalities
 #    And User enters account number in search box on manage bank page
 #    And User clicks on search button on manage bank page
 #    Then Data on manage bank page reflects upon account number
+
   @Sanity
   Scenario: Filter data of manage bank page upon entering account number
     When User clicks on bank icon
@@ -61,9 +62,9 @@ Feature: Verify Account Module Functionalities
 
      ##Process Credit Card Payment
 
-
-  Scenario: Filter Process Credit Card Payment information upon payment due date and receipt date
-    When User clicks on Process Credit Card button on account page
-    And User enters payment due date and receipt date value on Process Credit Card page
-    And User clicks on search button on Process Credit Card
-    Then Appropriate data displays on Process Credit Card upon date values
+#
+#  Scenario: Filter Process Credit Card Payment information upon payment due date and receipt date
+#    When User clicks on Process Credit Card button on account page
+#    And User enters payment due date and receipt date value on Process Credit Card page
+#    And User clicks on search button on Process Credit Card
+#    Then Appropriate data displays on Process Credit Card upon date values

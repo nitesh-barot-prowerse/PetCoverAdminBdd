@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.HomePage
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.039 s - in runner.HomePage
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2,532.526 s - in runner.HomePage
